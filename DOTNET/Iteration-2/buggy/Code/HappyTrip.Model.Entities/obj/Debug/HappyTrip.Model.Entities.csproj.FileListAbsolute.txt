@@ -1,0 +1,34 @@
+D:\TRAINING\MINDTREE\PROJECT\CODE\HappyTrip\HappyTrip.Model.Entities\bin\Debug\HappyTrip.Model.Entities.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\HappyTrip\HappyTrip.Model.Entities\bin\Debug\HappyTrip.Model.Entities.pdb
+D:\TRAINING\MINDTREE\PROJECT\CODE\HappyTrip\HappyTrip.Model.Entities\obj\Debug\ResolveAssemblyReference.cache
+D:\TRAINING\MINDTREE\PROJECT\CODE\HappyTrip\HappyTrip.Model.Entities\obj\Debug\HappyTrip.Model.Entities.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\HappyTrip\HappyTrip.Model.Entities\obj\Debug\HappyTrip.Model.Entities.pdb
+D:\TRAINING\MINDTREE\PROJECT\CODE\V1.2\HappyTrip\HappyTrip.Model.Entities\bin\Debug\HappyTrip.Model.Entities.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\V1.2\HappyTrip\HappyTrip.Model.Entities\bin\Debug\HappyTrip.Model.Entities.pdb
+D:\TRAINING\MINDTREE\PROJECT\CODE\V1.2\HappyTrip\HappyTrip.Model.Entities\obj\Debug\ResolveAssemblyReference.cache
+D:\TRAINING\MINDTREE\PROJECT\CODE\V1.2\HappyTrip\HappyTrip.Model.Entities\obj\Debug\HappyTrip.Model.Entities.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\V1.2\HappyTrip\HappyTrip.Model.Entities\obj\Debug\HappyTrip.Model.Entities.pdb
+D:\TRAINING\MINDTREE\PROJECT\CODE\V1.1\HappyTrip\HappyTrip.Model.Entities\bin\Debug\HappyTrip.Model.Entities.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\V1.1\HappyTrip\HappyTrip.Model.Entities\bin\Debug\HappyTrip.Model.Entities.pdb
+D:\TRAINING\MINDTREE\PROJECT\CODE\V1.1\HappyTrip\HappyTrip.Model.Entities\obj\Debug\ResolveAssemblyReference.cache
+D:\TRAINING\MINDTREE\PROJECT\CODE\V1.1\HappyTrip\HappyTrip.Model.Entities\obj\Debug\HappyTrip.Model.Entities.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\V1.1\HappyTrip\HappyTrip.Model.Entities\obj\Debug\HappyTrip.Model.Entities.pdb
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTrip.Model.Entities\bin\Debug\HappyTrip.Model.Entities.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTrip.Model.Entities\bin\Debug\HappyTrip.Model.Entities.pdb
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTrip.Model.Entities\obj\Debug\ResolveAssemblyReference.cache
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTrip.Model.Entities\obj\Debug\HappyTrip.Model.Entities.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTrip.Model.Entities\obj\Debug\HappyTrip.Model.Entities.pdb
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BUG CODE\HappyTrip\HappyTrip.Model.Entities\bin\Debug\HappyTrip.Model.Entities.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BUG CODE\HappyTrip\HappyTrip.Model.Entities\bin\Debug\HappyTrip.Model.Entities.pdb
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BUG CODE\HappyTrip\HappyTrip.Model.Entities\obj\Debug\ResolveAssemblyReference.cache
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BUG CODE\HappyTrip\HappyTrip.Model.Entities\obj\Debug\HappyTrip.Model.Entities.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BUG CODE\HappyTrip\HappyTrip.Model.Entities\obj\Debug\HappyTrip.Model.Entities.pdb
+E:\pratian\Mindtree\Iteration 2\BUG CODE TO PAVAN\BUG CODE TO PAVAN\HappyTrip\HappyTrip.Model.Entities\bin\Debug\HappyTrip.Model.Entities.dll
+E:\pratian\Mindtree\Iteration 2\BUG CODE TO PAVAN\BUG CODE TO PAVAN\HappyTrip\HappyTrip.Model.Entities\bin\Debug\HappyTrip.Model.Entities.pdb
+E:\pratian\Mindtree\Iteration 2\BUG CODE TO PAVAN\BUG CODE TO PAVAN\HappyTrip\HappyTrip.Model.Entities\obj\Debug\ResolveAssemblyReference.cache
+E:\pratian\Mindtree\Iteration 2\BUG CODE TO PAVAN\BUG CODE TO PAVAN\HappyTrip\HappyTrip.Model.Entities\obj\Debug\HappyTrip.Model.Entities.dll
+E:\pratian\Mindtree\Iteration 2\BUG CODE TO PAVAN\BUG CODE TO PAVAN\HappyTrip\HappyTrip.Model.Entities\obj\Debug\HappyTrip.Model.Entities.pdb
+E:\Prabhav-Laptop\E\Mindtree\Mindtree-CodeBase\Other\DOTNET\Iteration-2\buggy\HappyTrip-2\HappyTrip.Model.Entities\bin\Debug\HappyTrip.Model.Entities.dll
+E:\Prabhav-Laptop\E\Mindtree\Mindtree-CodeBase\Other\DOTNET\Iteration-2\buggy\HappyTrip-2\HappyTrip.Model.Entities\bin\Debug\HappyTrip.Model.Entities.pdb
+E:\Prabhav-Laptop\E\Mindtree\Mindtree-CodeBase\Other\DOTNET\Iteration-2\buggy\HappyTrip-2\HappyTrip.Model.Entities\obj\Debug\HappyTrip.Model.Entities.dll
+E:\Prabhav-Laptop\E\Mindtree\Mindtree-CodeBase\Other\DOTNET\Iteration-2\buggy\HappyTrip-2\HappyTrip.Model.Entities\obj\Debug\HappyTrip.Model.Entities.pdb

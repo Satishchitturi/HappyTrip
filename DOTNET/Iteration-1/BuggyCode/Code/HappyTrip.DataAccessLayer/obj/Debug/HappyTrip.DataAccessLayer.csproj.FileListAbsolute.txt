@@ -1,0 +1,14 @@
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\bin\Debug\HappyTrip.DataAccessLayer.dll
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\bin\Debug\HappyTrip.DataAccessLayer.pdb
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\bin\Debug\HappyTrip.Model.Entities.dll
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\bin\Debug\HappyTrip.Model.Entities.pdb
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\obj\Debug\ResolveAssemblyReference.cache
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\obj\Debug\HappyTrip.DataAccessLayer.dll
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\obj\Debug\HappyTrip.DataAccessLayer.pdb
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\HappyTrip.DataAccessLayer\bin\Debug\HappyTrip.DataAccessLayer.dll
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\HappyTrip.DataAccessLayer\bin\Debug\HappyTrip.DataAccessLayer.pdb
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\HappyTrip.DataAccessLayer\bin\Debug\HappyTrip.Model.Entities.dll
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\HappyTrip.DataAccessLayer\bin\Debug\HappyTrip.Model.Entities.pdb
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\HappyTrip.DataAccessLayer\obj\Debug\HappyTrip.DataAccessLayer.csprojResolveAssemblyReference.cache
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\HappyTrip.DataAccessLayer\obj\Debug\HappyTrip.DataAccessLayer.dll
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\HappyTrip.DataAccessLayer\obj\Debug\HappyTrip.DataAccessLayer.pdb

@@ -1,0 +1,9 @@
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\PaymentGateway\bin\Debug\PaymentGateway.dll
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\PaymentGateway\bin\Debug\PaymentGateway.pdb
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\PaymentGateway\obj\Debug\ResolveAssemblyReference.cache
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\PaymentGateway\obj\Debug\PaymentGateway.dll
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\PaymentGateway\obj\Debug\PaymentGateway.pdb
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\PaymentGateway\bin\Debug\PaymentGateway.dll
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\PaymentGateway\bin\Debug\PaymentGateway.pdb
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\PaymentGateway\obj\Debug\PaymentGateway.dll
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\PaymentGateway\obj\Debug\PaymentGateway.pdb

@@ -1,0 +1,16 @@
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.Model.PaymentService\bin\Debug\HappyTrip.Model.PaymentService.dll.config
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.Model.PaymentService\bin\Debug\HappyTrip.Model.PaymentService.dll
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.Model.PaymentService\bin\Debug\HappyTrip.Model.PaymentService.pdb
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.Model.PaymentService\bin\Debug\HappyTrip.Model.Entities.dll
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.Model.PaymentService\bin\Debug\HappyTrip.Model.Entities.pdb
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.Model.PaymentService\obj\Debug\ResolveAssemblyReference.cache
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.Model.PaymentService\obj\Debug\HappyTrip.Model.PaymentService.dll
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.Model.PaymentService\obj\Debug\HappyTrip.Model.PaymentService.pdb
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\HappyTrip.Model.PaymentService\bin\Debug\HappyTrip.Model.PaymentService.dll.config
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\HappyTrip.Model.PaymentService\bin\Debug\HappyTrip.Model.PaymentService.dll
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\HappyTrip.Model.PaymentService\bin\Debug\HappyTrip.Model.PaymentService.pdb
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\HappyTrip.Model.PaymentService\bin\Debug\HappyTrip.Model.Entities.dll
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\HappyTrip.Model.PaymentService\bin\Debug\HappyTrip.Model.Entities.pdb
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\HappyTrip.Model.PaymentService\obj\Debug\HappyTrip.Model.PaymentService.csprojResolveAssemblyReference.cache
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\HappyTrip.Model.PaymentService\obj\Debug\HappyTrip.Model.PaymentService.dll
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\HappyTrip.Model.PaymentService\obj\Debug\HappyTrip.Model.PaymentService.pdb

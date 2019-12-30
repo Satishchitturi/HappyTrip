@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dependencies name="HappyTripWebApp" version="1.0.0.0">
+  <Assembly name="HappyTripWebApp" version="1.0.0.0">
+    <References>
+      <Reference name="System.Web" fullName="System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="4.0.0.0" />
+      <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Web.Extensions" fullName="System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="4.0.0.0" />
+      <Reference name="HappyTrip.Model.Entities" fullName="HappyTrip.Model.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" version="1.0.0.0" />
+      <Reference name="HappyTrip.Model.BusinessLayer" fullName="HappyTrip.Model.BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" version="1.0.0.0" />
+      <Reference name="System.Core" fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Web.ApplicationServices" fullName="System.Web.ApplicationServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="4.0.0.0" />
+      <Reference name="System" fullName="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Web.Services" fullName="System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="4.0.0.0" />
+      <Reference name="System.Data" fullName="System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+    </References>
+    <TypeReferences>
+      <From fullname="HappyTripWebApp.Admin.AddFlight">
+        <To fullname="HappyTripWebApp.Admin.WebUserControl1" assemblyname="HappyTripWebApp" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.AirlineManagerException" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.TravelClass" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Flight" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.FlightManager" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.FlightClass" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.FlightManagerException" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Airline" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTripWebApp.Account.Register">
+        <To fullname="HappyTrip.Model.Entities.UserAccount.ProfileCommon" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTripWebApp.Index">
+        <To fullname="HappyTrip.Model.BusinessLayer.Search.ISearchManager" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTripWebApp.Admin.EditAirline">
+        <To fullname="HappyTripWebApp.Admin.WebUserControl1" assemblyname="HappyTripWebApp" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.AirlineManagerException" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTripWebApp.SiteMaster" />
+      <From fullname="HappyTripWebApp.Confirmation">
+        <To fullname="HappyTrip.Model.Entities.Transaction.TravelBooking" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Transaction.FlightBooking" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Transaction.Passenger" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTripWebApp.Admin.EditFlight">
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Flight" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTripWebApp.Admin.WebUserControl1" assemblyname="HappyTripWebApp" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.FlightManager" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.FlightClass" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.FlightManagerException" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.AirlineManagerException" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Airline" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTripWebApp.UpdateProfile">
+        <To fullname="HappyTrip.Model.Entities.UserAccount.ProfileCommon" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTripWebApp.Account.Register_Success" />
+      <From fullname="HappyTripWebApp.Booking.Payment_Success">
+        <To fullname="HappyTrip.Model.Entities.Transaction.TravelBooking" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Transaction.FlightBooking" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Transaction.Passenger" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTripWebApp.Admin.ManageCity">
+        <To fullname="HappyTripWebApp.Admin.WebUserControl1" assemblyname="HappyTripWebApp" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.CityManager" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.CityManagerException" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Common.City" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Common.State" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTripWebApp.Admin.ManageAirlines">
+        <To fullname="HappyTripWebApp.Admin.WebUserControl1" assemblyname="HappyTripWebApp" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTripWebApp.Error" />
+      <From fullname="HappyTripWebApp.Admin.ManageFlights">
+        <To fullname="HappyTripWebApp.Admin.WebUserControl1" assemblyname="HappyTripWebApp" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.FlightManager" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.FlightManagerException" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Flight" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTripWebApp.Admin.EditSchedule">
+        <To fullname="HappyTripWebApp.Admin.WebUserControl1" assemblyname="HappyTripWebApp" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Schedule" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.ScheduleManager" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.ScheduleManagerException" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.CityManager" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Common.City" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.AirLineManager" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Airline" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.CityManagerException" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.AirlineManagerException" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.FlightManager" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Flight" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.FlightManagerException" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Route" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.FlightCost" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTripWebApp.Passengers">
+        <To fullname="HappyTrip.Model.Entities.Transaction.TravelBooking" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Transaction.FlightBooking" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Transaction.Passenger" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.UserAccount.ProfileCommon" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Transaction.BookingContact" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTripWebApp.Admin.WebForm1">
+        <To fullname="HappyTripWebApp.Admin.WebUserControl1" assemblyname="HappyTripWebApp" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Common.State" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Common.City" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.CityManager" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.CityManagerException" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTripWebApp.Account.ChangePass" />
+      <From fullname="HappyTripWebApp.Admin.Add_Schedule">
+        <To fullname="HappyTripWebApp.Admin.WebUserControl1" assemblyname="HappyTripWebApp" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.CityManager" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Common.City" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.CityManagerException" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.AirLineManager" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Airline" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.AirlineManagerException" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.TravelClass" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.ScheduleManager" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Schedule" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Route" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Flight" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.FlightCost" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.ScheduleManagerException" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.FlightManager" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.FlightManagerException" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTripWebApp.Admin.AddRoute">
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.RouteManager" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTripWebApp.Admin.WebUserControl1" assemblyname="HappyTripWebApp" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.CityManager" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Common.City" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.CityManagerException" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Route" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.RouteManagerException" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTripWebApp.Account.ChangePassSuccess" />
+      <From fullname="HappyTripWebApp.Results">
+        <To fullname="HappyTrip.Model.Entities.AirTravel.TravelSchedule" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Schedule" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.TravelDirection" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Common.City" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.SearchInfo" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.TravelClass" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.Search.ISearchManager" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.SearchLog" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.SearchResult" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Transaction.FlightBooking" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.FlightClass" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Transaction.TravelBooking" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTripWebApp.Admin.RouteUI">
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.RouteManager" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTripWebApp.Admin.WebUserControl1" assemblyname="HappyTripWebApp" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Route" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.RouteManagerException" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTripWebApp.Account.Login" />
+      <From fullname="HappyTripWebApp.Admin.WebUserControl1" />
+      <From fullname="HappyTripWebApp.Admin.Schedule_Flight">
+        <To fullname="HappyTripWebApp.Admin.WebUserControl1" assemblyname="HappyTripWebApp" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Schedule" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.ScheduleManager" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.ScheduleManagerException" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTripWebApp.Global" />
+      <From fullname="HappyTripWebApp.Payment_Screen">
+        <To fullname="HappyTrip.Model.Entities.Transaction.TravelBooking" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Transaction.FlightBooking" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Transaction.Card" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.BusinessLayer.Transaction.IBookingManager" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTripWebApp.Admin.Home">
+        <To fullname="HappyTripWebApp.Admin.WebUserControl1" assemblyname="HappyTripWebApp" assemblyversion="1.0.0.0" />
+      </From>
+    </TypeReferences>
+  </Assembly>
+</Dependencies>

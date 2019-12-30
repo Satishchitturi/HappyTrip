@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dependencies name="PaymentGateway" version="1.0.0.0">
+  <Assembly name="PaymentGateway" version="1.0.0.0">
+    <References>
+      <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.ServiceModel" fullName="System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Runtime.Serialization" fullName="System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+    </References>
+    <TypeReferences>
+      <From fullname="PaymentGateway.IPaymentService">
+        <To fullname="PaymentGateway.Card" assemblyname="PaymentGateway" assemblyversion="1.0.0.0" />
+        <To fullname="PaymentGateway.PaymentInfo" assemblyname="PaymentGateway" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="PaymentGateway.Transaction">
+        <To fullname="PaymentGateway.Card" assemblyname="PaymentGateway" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="PaymentGateway.ServiceExceptionInfo" />
+      <From fullname="PaymentGateway.Card" />
+      <From fullname="PaymentGateway.PaymentStatus" />
+      <From fullname="PaymentGateway.PaymentInfo">
+        <To fullname="PaymentGateway.PaymentStatus" assemblyname="PaymentGateway" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="PaymentGateway.CardType" />
+      <From fullname="PaymentGateway.PaymentService">
+        <To fullname="PaymentGateway.IPaymentService" assemblyname="PaymentGateway" assemblyversion="1.0.0.0" />
+        <To fullname="PaymentGateway.Card" assemblyname="PaymentGateway" assemblyversion="1.0.0.0" />
+        <To fullname="PaymentGateway.PaymentInfo" assemblyname="PaymentGateway" assemblyversion="1.0.0.0" />
+        <To fullname="PaymentGateway.ServiceExceptionInfo" assemblyname="PaymentGateway" assemblyversion="1.0.0.0" />
+      </From>
+    </TypeReferences>
+  </Assembly>
+</Dependencies>

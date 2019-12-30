@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="6ba82bc4-6aa8-4674-90ab-e7ddde4f7ec8" name="Admin@ADMIN-PC 2013-06-09 19:13:47" runUser="Admin-PC\Admin" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="ca3567a1-09e5-4322-8a68-8782cfb3074b">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Admin_ADMIN-PC 2013-06-09 19_13_47">
+      <DeploymentItem filename="E:\Program Files\Microsoft Enterprise Library 5.0\Bin\Microsoft.Practices.ServiceLocation.dll" />
+      <DeploymentItem filename="E:\Program Files\Microsoft Enterprise Library 5.0\Bin\Microsoft.Practices.Unity.dll" />
+      <DeploymentItem filename="E:\Program Files\Microsoft Enterprise Library 5.0\Bin\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+      <DeploymentItem filename="E:\Program Files\Microsoft Enterprise Library 5.0\Bin\Microsoft.Practices.EnterpriseLibrary.Security.dll" />
+      <DeploymentItem filename="E:\Program Files\Microsoft Enterprise Library 5.0\Bin\Microsoft.Practices.Unity.Interception.dll" />
+      <DeploymentItem filename="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\bin\Debug\HappyTrip.DataAccessLayer.dll" />
+      <DeploymentItem filename="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.Model.BusinessLayer\bin\Debug\HappyTrip.Model.BusinessLayer.dll" />
+      <DeploymentItem filename="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.Model.PaymentService\bin\Debug\HappyTrip.Model.PaymentService.dll" />
+      <DeploymentItem filename="E:\Program Files\Microsoft Enterprise Library 5.0\Bin\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
+      <DeploymentItem filename="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.Model.Entities\bin\Debug\HappyTrip.Model.Entities.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-06-09T19:13:47.2754806+05:30" queuing="2013-06-09T19:13:53.4394806+05:30" start="2013-06-09T19:13:53.5574806+05:30" finish="2013-06-09T19:13:55.3014806+05:30" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetAirLinesArrayTest" storage="e:\pratian\mindtree\bangalore_iteration\bug code\happytrip\happytrip.unittestlayer\bin\debug\happytrip.unittestlayer.dll" id="edbc1df9-5532-e845-da9b-2c56e704e805">
+      <Execution id="93c5aa89-b136-4cc7-80f8-c8b58f287a55" />
+      <TestMethod codeBase="E:/pratian/Mindtree/Bangalore_Iteration/Bug Code/HappyTrip/HappyTrip.UnitTestLayer/bin/Debug/HappyTrip.UnitTestLayer.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="HappyTrip.UnitTestLayer.AirLineManagerTest, HappyTrip.UnitTestLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetAirLinesArrayTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="edbc1df9-5532-e845-da9b-2c56e704e805" executionId="93c5aa89-b136-4cc7-80f8-c8b58f287a55" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="93c5aa89-b136-4cc7-80f8-c8b58f287a55" testId="edbc1df9-5532-e845-da9b-2c56e704e805" testName="GetAirLinesArrayTest" computerName="ADMIN-PC" duration="00:00:00.1760390" startTime="2013-06-09T19:13:53.6974806+05:30" endTime="2013-06-09T19:13:55.1214806+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="93c5aa89-b136-4cc7-80f8-c8b58f287a55">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method HappyTrip.UnitTestLayer.AirLineManagerTest.GetAirLinesArrayTest threw exception: 
+HappyTrip.Model.BusinessLayer.AirTravel.AirlineManagerException: Unable to get airlines ---&gt; HappyTrip.DataAccessLayer.Common.AirlineDAOException: Unable to get airlines ---&gt; HappyTrip.DataAccessLayer.Common.ConnectToDatabaseException: Unable To Connect To Database ---&gt; System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at HappyTrip.DataAccessLayer.Common.DAO.GetConnection() in E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Common\DAO.cs:line 27
+ --- End of inner exception stack trace ---
+    at HappyTrip.DataAccessLayer.Common.DAO.GetConnection() in E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Common\DAO.cs:line 39
+   at HappyTrip.DataAccessLayer.AirTravel.AirlineDAO.GetAirlines() in E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel\AirlineDAO.cs:line 38
+ --- End of inner exception stack trace ---
+    at HappyTrip.DataAccessLayer.AirTravel.AirlineDAO.GetAirlines() in E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel\AirlineDAO.cs:line 64
+   at HappyTrip.Model.BusinessLayer.AirTravel.AirLineManager.GetAirLines() in E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.Model.BusinessLayer\AirTravel\AirLineManager.cs:line 49
+ --- End of inner exception stack trace ---
+    at HappyTrip.Model.BusinessLayer.AirTravel.AirLineManager.GetAirLines() in E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.Model.BusinessLayer\AirTravel\AirLineManager.cs:line 54
+   at HappyTrip.UnitTestLayer.AirLineManagerTest.GetAirLinesArrayTest() in E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.UnitTestLayer\BusinessLayer\AirTravel\AirLineManagerTest.cs:line 91
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

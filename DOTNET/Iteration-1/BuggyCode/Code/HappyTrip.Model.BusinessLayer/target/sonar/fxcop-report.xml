@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 10.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="10.0">
+ <Targets>
+  <Target Name="$(ProjectDir)/../../bin/Debug/HappyTrip.Model.BusinessLayer.dll">
+   <Modules>
+    <Module Name="happytrip.model.businesslayer.dll">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Sign 'HappyTrip.Model.BusinessLayer.dll' with a strong name key.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="HappyTrip.Model.BusinessLayer.AirTravel">
+       <Types>
+        <Type Name="AirLineManager" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="AirLine" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="Breaking">
+           <Issue Name="TypeShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'AirLine' in type name 'AirLineManager' exists as a discrete term. If your usage is intended to be single word, case it as 'Airline'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#GetAirLines()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="AirLines" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.Model.BusinessLayer\AirTravel" File="AirLineManager.cs" Line="45">The compound word 'AirLines' in member name 'AirLineManager.GetAirLines()' exists as a discrete term. If your usage is intended to be single word, case it as 'Airlines' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="AirlineManagerException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'AirlineManagerException': protected AirlineManagerException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+          <Message TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="Breaking">
+           <Issue Name="System.ApplicationException" Certainty="75" Level="Error">Change the base type of 'AirlineManagerException' so that it no longer extends 'ApplicationException'. This base exception type does not provide any additional value for framework classes. Extend 'System.Exception' or an existing unsealed exception type instead. Do not create a new exception base type unless there is specific value in enabling the creation of a catch handler for an entire class of exceptions.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="CityManager" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetStates()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.Model.BusinessLayer\AirTravel" File="CityManager.cs" Line="139">Change 'List&lt;State&gt;' in 'CityManager.GetStates()' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.Model.BusinessLayer\AirTravel" File="CityManager.cs" Line="139">Change 'CityManager.GetStates()' to a property if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CityManagerException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'CityManagerException': protected CityManagerException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+          <Message TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="Breaking">
+           <Issue Name="System.ApplicationException" Certainty="75" Level="Error">Change the base type of 'CityManagerException' so that it no longer extends 'ApplicationException'. This base exception type does not provide any additional value for framework classes. Extend 'System.Exception' or an existing unsealed exception type instead. Do not create a new exception base type unless there is specific value in enabling the creation of a catch handler for an entire class of exceptions.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="FlightManager" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetFlightsForAirLine(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="AirLine" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.Model.BusinessLayer\AirTravel" File="FlightManager.cs" Line="112">The compound word 'AirLine' in member name 'FlightManager.GetFlightsForAirLine(int)' exists as a discrete term. If your usage is intended to be single word, case it as 'Airline' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.Model.BusinessLayer\AirTravel" File="FlightManager.cs" Line="112">Change 'List&lt;Flight&gt;' in 'FlightManager.GetFlightsForAirLine(int)' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FlightManagerException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'FlightManagerException': protected FlightManagerException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+          <Message TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="Breaking">
+           <Issue Name="System.ApplicationException" Certainty="75" Level="Error">Change the base type of 'FlightManagerException' so that it no longer extends 'ApplicationException'. This base exception type does not provide any additional value for framework classes. Extend 'System.Exception' or an existing unsealed exception type instead. Do not create a new exception base type unless there is specific value in enabling the creation of a catch handler for an entire class of exceptions.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="RouteManagerException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'RouteManagerException': protected RouteManagerException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+          <Message TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="Breaking">
+           <Issue Name="System.ApplicationException" Certainty="75" Level="Error">Change the base type of 'RouteManagerException' so that it no longer extends 'ApplicationException'. This base exception type does not provide any additional value for framework classes. Extend 'System.Exception' or an existing unsealed exception type instead. Do not create a new exception base type unless there is specific value in enabling the creation of a catch handler for an entire class of exceptions.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="RouteNotAvailableException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'RouteNotAvailableException': protected RouteNotAvailableException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="ScheduleManager" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetFlightCostsForSchedule(System.Int64)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.Model.BusinessLayer\AirTravel" File="ScheduleManager.cs" Line="133">Change 'List&lt;FlightCost&gt;' in 'ScheduleManager.GetFlightCostsForSchedule(long)' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ScheduleManagerException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'ScheduleManagerException': protected ScheduleManagerException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+          <Message TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="Breaking">
+           <Issue Name="System.ApplicationException" Certainty="75" Level="Error">Change the base type of 'ScheduleManagerException' so that it no longer extends 'ApplicationException'. This base exception type does not provide any additional value for framework classes. Extend 'System.Exception' or an existing unsealed exception type instead. Do not create a new exception base type unless there is specific value in enabling the creation of a catch handler for an entire class of exceptions.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="HappyTrip.Model.BusinessLayer.Search">
+       <Types>
+        <Type Name="CitiesNotAvailableException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'CitiesNotAvailableException': protected CitiesNotAvailableException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="ConnectingFlightsNotAvailableException" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="ExceptionsShouldBePublic" Category="Microsoft.Design" CheckId="CA1064" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="NonBreaking">
+           <Issue Certainty="95" Level="Warning">Make exception class 'ConnectingFlightsNotAvailableException' public.</Issue>
+          </Message>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'ConnectingFlightsNotAvailableException': protected ConnectingFlightsNotAvailableException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="DirectFlightsNotAvailableException" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="ExceptionsShouldBePublic" Category="Microsoft.Design" CheckId="CA1064" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="NonBreaking">
+           <Issue Certainty="95" Level="Warning">Make exception class 'DirectFlightsNotAvailableException' public.</Issue>
+          </Message>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'DirectFlightsNotAvailableException': protected DirectFlightsNotAvailableException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="FlightSeatsAvailabilityException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'FlightSeatsAvailabilityException': protected FlightSeatsAvailabilityException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+          <Message TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="Breaking">
+           <Issue Name="System.ApplicationException" Certainty="75" Level="Error">Change the base type of 'FlightSeatsAvailabilityException' so that it no longer extends 'ApplicationException'. This base exception type does not provide any additional value for framework classes. Extend 'System.Exception' or an existing unsealed exception type instead. Do not create a new exception base type unless there is specific value in enabling the creation of a catch handler for an entire class of exceptions.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="FlightsNotAvailableException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'FlightsNotAvailableException': protected FlightsNotAvailableException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+          <Message TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="Breaking">
+           <Issue Name="System.ApplicationException" Certainty="75" Level="Error">Change the base type of 'FlightsNotAvailableException' so that it no longer extends 'ApplicationException'. This base exception type does not provide any additional value for framework classes. Extend 'System.Exception' or an existing unsealed exception type instead. Do not create a new exception base type unless there is specific value in enabling the creation of a catch handler for an entire class of exceptions.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="ISearchManager" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetCities()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;City&gt;' in 'ISearchManager.GetCities()' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning">Change 'ISearchManager.GetCities()' to a property if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SearchManagerFactory" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetInstance()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.Model.BusinessLayer\Search" File="SearchManagerFactory.cs" Line="32">Change 'SearchManagerFactory.GetInstance()' to a property if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="HappyTrip.Model.BusinessLayer.Transaction">
+       <Types>
+        <Type Name="BookingException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'BookingException': protected BookingException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+          <Message TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="Breaking">
+           <Issue Name="System.ApplicationException" Certainty="75" Level="Error">Change the base type of 'BookingException' so that it no longer extends 'ApplicationException'. This base exception type does not provide any additional value for framework classes. Extend 'System.Exception' or an existing unsealed exception type instead. Do not create a new exception base type unless there is specific value in enabling the creation of a catch handler for an entire class of exceptions.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="BookingManagerFactory" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetInstance()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.Model.BusinessLayer\Transaction" File="BookingManagerFactory.cs" Line="32">Change 'BookingManagerFactory.GetInstance()' to a property if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="InvalidBookingTypeException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'InvalidBookingTypeException': protected InvalidBookingTypeException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+          <Message TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="Breaking">
+           <Issue Name="System.ApplicationException" Certainty="75" Level="Error">Change the base type of 'InvalidBookingTypeException' so that it no longer extends 'ApplicationException'. This base exception type does not provide any additional value for framework classes. Extend 'System.Exception' or an existing unsealed exception type instead. Do not create a new exception base type unless there is specific value in enabling the creation of a catch handler for an entire class of exceptions.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="PaymentProcessException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'PaymentProcessException': protected PaymentProcessException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+          <Message TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="Breaking">
+           <Issue Name="System.ApplicationException" Certainty="75" Level="Error">Change the base type of 'PaymentProcessException' so that it no longer extends 'ApplicationException'. This base exception type does not provide any additional value for framework classes. Extend 'System.Exception' or an existing unsealed exception type instead. Do not create a new exception base type unless there is specific value in enabling the creation of a catch handler for an entire class of exceptions.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="StoreBookingInDatabaseException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'StoreBookingInDatabaseException': protected StoreBookingInDatabaseException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+          <Message TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058" Status="Active" Created="2015-06-15 15:28:32Z" FixCategory="Breaking">
+           <Issue Name="System.ApplicationException" Certainty="75" Level="Error">Change the base type of 'StoreBookingInDatabaseException' so that it no longer extends 'ApplicationException'. This base exception type does not provide any additional value for framework classes. Extend 'System.Exception' or an existing unsealed exception type instead. Do not create a new exception base type unless there is specific value in enabling the creation of a catch handler for an entire class of exceptions.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>Assemblies should have valid strong names</Name>
+   <Description>Either the assembly has no strong name, an invalid one, or the strong name is valid only because of the computer configuration. The assembly should not be deployed in this state. The most common causes of this are: 1) The assembly's contents were modified after it was signed. 2) The signing process failed. 3) The assembly was delay-signed. 4) A registry key existed that allowed the check to pass (where it would not have otherwise).</Description>
+   <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182127(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="DesignRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702">
+   <Name>Compound words should be cased correctly</Name>
+   <Description>Avoid creating compound words from terms which exist in the dictionary as discrete terms. Do not create a compound word such as 'StopWatch' or 'PopUp'. These terms are recognized in the dictionary and should be cased as 'Stopwatch' and 'Popup'.</Description>
+   <Resolution Name="MemberShouldBeDiscreteTerm">The compound word '{0}' in member name {1} exists as a discrete term. If your usage is intended to be single word, case it as '{2}' or strip the first token entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="TypeShouldBeDiscreteTerm">The compound word '{0}' in type name {1} exists as a discrete term. If your usage is intended to be single word, case it as '{2}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264474(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="80">Error</MessageLevel>
+   <File Name="NamingRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002">
+   <Name>Do not expose generic lists</Name>
+   <Description>Do not expose List&lt;T&gt; in object models. Use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt; instead. List&lt;T&gt; is meant to be used from implementation, not in object model API. List&lt;T&gt; is optimized for performance at the cost of long term versioning. For example, if you return List&lt;T&gt; to the client code, you will not ever be able to receive notifications when client code modifies the collection.</Description>
+   <Resolution Name="Default">Change {0} in {1} to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182142(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="DesignRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="ExceptionsShouldBePublic" Category="Microsoft.Design" CheckId="CA1064">
+   <Name>Exceptions should be public</Name>
+   <Description>Exception classes should either be public, or have a non-generic public ancestor.</Description>
+   <Resolution Name="Default">Make exception class {0} public.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264484(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="DesignRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032">
+   <Name>Implement standard exception constructors</Name>
+   <Description>Multiple constructors are required to correctly implement a custom exception. Missing constructors can make your exception unusable in certain scenarios. For example, the serialization constructor is required for handling exceptions in XML Web services.</Description>
+   <Resolution Name="MissingConstructor">Add the following constructor to {0}: {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182151(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="DesignRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058">
+   <Name>Types should not extend certain base types</Name>
+   <Description>It is best not to extend some base types or to prefer extending better alternatives to those base types.</Description>
+   <Resolution Name="System.ApplicationException">Change the base type of {0} so that it no longer extends {1}. This base exception type does not provide any additional value for framework classes. Extend 'System.Exception' or an existing unsealed exception type instead. Do not create a new exception base type unless there is specific value in enabling the creation of a catch handler for an entire class of exceptions.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182171(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="DesignRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024">
+   <Name>Use properties where appropriate</Name>
+   <Description>Properties should be used instead of Get/Set methods in most situations. Methods are preferable to properties in the following situations: the operation is a conversion, is expensive or has an observable side-effect; the order of execution is important; calling the member twice in succession creates different results; a member is static but returns a mutable value; or the member returns an array.</Description>
+   <Resolution Name="Default">Change {0} to a property if appropriate.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182181(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="DesignRules.dll" Version="10.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

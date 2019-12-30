@@ -1,0 +1,44 @@
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTripFileLogger\bin\Debug\HappyTripFileLogger.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTripFileLogger\bin\Debug\HappyTripFileLogger.pdb
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTripFileLogger\bin\Debug\HappyTrip.Model.BusinessLayer.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTripFileLogger\bin\Debug\HappyTrip.Model.Entities.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTripFileLogger\bin\Debug\HappyTrip.DataAccessLayer.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTripFileLogger\bin\Debug\HappyTrip.Model.PaymentService.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTripFileLogger\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTripFileLogger\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTripFileLogger\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTripFileLogger\bin\Debug\Microsoft.Practices.Unity.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTripFileLogger\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTripFileLogger\bin\Debug\HappyTrip.Model.BusinessLayer.pdb
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTripFileLogger\bin\Debug\HappyTrip.Model.Entities.pdb
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTripFileLogger\bin\Debug\HappyTrip.DataAccessLayer.pdb
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTripFileLogger\bin\Debug\HappyTrip.Model.PaymentService.pdb
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTripFileLogger\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTripFileLogger\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTripFileLogger\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTripFileLogger\bin\Debug\Microsoft.Practices.Unity.xml
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTripFileLogger\bin\Debug\Microsoft.Practices.Unity.Interception.xml
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTripFileLogger\obj\Debug\ResolveAssemblyReference.cache
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTripFileLogger\obj\Debug\HappyTripFileLogger.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\HappyTripFileLogger\obj\Debug\HappyTripFileLogger.pdb
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BUG CODE\HappyTrip\HappyTripFileLogger\bin\Debug\HappyTripFileLogger.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BUG CODE\HappyTrip\HappyTripFileLogger\bin\Debug\HappyTripFileLogger.pdb
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BUG CODE\HappyTrip\HappyTripFileLogger\bin\Debug\HappyTrip.Model.Entities.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BUG CODE\HappyTrip\HappyTripFileLogger\bin\Debug\HappyTrip.Model.Entities.pdb
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BUG CODE\HappyTrip\HappyTripFileLogger\obj\Debug\ResolveAssemblyReference.cache
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BUG CODE\HappyTrip\HappyTripFileLogger\obj\Debug\HappyTripFileLogger.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BUG CODE\HappyTrip\HappyTripFileLogger\obj\Debug\HappyTripFileLogger.pdb
+E:\pratian\Mindtree\Iteration 2\BUG CODE TO PAVAN\BUG CODE TO PAVAN\HappyTrip\HappyTripFileLogger\bin\Debug\HappyTripFileLogger.dll
+E:\pratian\Mindtree\Iteration 2\BUG CODE TO PAVAN\BUG CODE TO PAVAN\HappyTrip\HappyTripFileLogger\bin\Debug\HappyTripFileLogger.pdb
+E:\pratian\Mindtree\Iteration 2\BUG CODE TO PAVAN\BUG CODE TO PAVAN\HappyTrip\HappyTripFileLogger\bin\Debug\HappyTrip.Model.Entities.dll
+E:\pratian\Mindtree\Iteration 2\BUG CODE TO PAVAN\BUG CODE TO PAVAN\HappyTrip\HappyTripFileLogger\bin\Debug\HappyTrip.Model.Entities.pdb
+E:\pratian\Mindtree\Iteration 2\BUG CODE TO PAVAN\BUG CODE TO PAVAN\HappyTrip\HappyTripFileLogger\obj\Debug\ResolveAssemblyReference.cache
+E:\pratian\Mindtree\Iteration 2\BUG CODE TO PAVAN\BUG CODE TO PAVAN\HappyTrip\HappyTripFileLogger\obj\Debug\HappyTripFileLogger.dll
+E:\pratian\Mindtree\Iteration 2\BUG CODE TO PAVAN\BUG CODE TO PAVAN\HappyTrip\HappyTripFileLogger\obj\Debug\HappyTripFileLogger.pdb
+E:\Prabhav-Laptop\E\Mindtree\Mindtree-CodeBase\Other\DOTNET\Iteration-2\buggy\HappyTrip-2\HappyTripFileLogger\bin\Debug\HappyTripFileLogger.dll
+E:\Prabhav-Laptop\E\Mindtree\Mindtree-CodeBase\Other\DOTNET\Iteration-2\buggy\HappyTrip-2\HappyTripFileLogger\bin\Debug\HappyTripFileLogger.pdb
+E:\Prabhav-Laptop\E\Mindtree\Mindtree-CodeBase\Other\DOTNET\Iteration-2\buggy\HappyTrip-2\HappyTripFileLogger\bin\Debug\HappyTrip.Model.Entities.dll
+E:\Prabhav-Laptop\E\Mindtree\Mindtree-CodeBase\Other\DOTNET\Iteration-2\buggy\HappyTrip-2\HappyTripFileLogger\bin\Debug\HappyTrip.Model.Entities.pdb
+E:\Prabhav-Laptop\E\Mindtree\Mindtree-CodeBase\Other\DOTNET\Iteration-2\buggy\HappyTrip-2\HappyTripFileLogger\obj\Debug\HappyTripFileLogger.csprojResolveAssemblyReference.cache
+E:\Prabhav-Laptop\E\Mindtree\Mindtree-CodeBase\Other\DOTNET\Iteration-2\buggy\HappyTrip-2\HappyTripFileLogger\obj\Debug\HappyTripFileLogger.dll
+E:\Prabhav-Laptop\E\Mindtree\Mindtree-CodeBase\Other\DOTNET\Iteration-2\buggy\HappyTrip-2\HappyTripFileLogger\obj\Debug\HappyTripFileLogger.pdb

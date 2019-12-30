@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dependencies name="HappyTrip.Model.PaymentService" version="1.0.0.0">
+  <Assembly name="HappyTrip.Model.PaymentService" version="1.0.0.0">
+    <References>
+      <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Runtime.Serialization" fullName="System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System" fullName="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.ServiceModel" fullName="System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="HappyTrip.Model.Entities" fullName="HappyTrip.Model.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" version="1.0.0.0" />
+    </References>
+    <TypeReferences>
+      <From fullname="HappyTrip.Model.PaymentService.PaymentManagerFactory">
+        <To fullname="HappyTrip.Model.PaymentService.IPaymentManager" assemblyname="HappyTrip.Model.PaymentService" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.Model.PaymentService.IPaymentManager">
+        <To fullname="HappyTrip.Model.Entities.Transaction.Card" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Transaction.PaymentStatus&amp;" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.Model.PaymentService.PaymentManager">
+        <To fullname="HappyTrip.Model.PaymentService.IPaymentManager" assemblyname="HappyTrip.Model.PaymentService" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Transaction.Card" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Transaction.PaymentStatus&amp;" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.PaymentService.PaymentGateway.PaymentServiceClient" assemblyname="HappyTrip.Model.PaymentService" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.PaymentService.PaymentGateway.Card" assemblyname="HappyTrip.Model.PaymentService" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.PaymentService.PaymentGateway.PaymentInfo" assemblyname="HappyTrip.Model.PaymentService" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.Model.PaymentService.PaymentGateway.Card" />
+      <From fullname="HappyTrip.Model.PaymentService.PaymentGateway.PaymentInfo">
+        <To fullname="HappyTrip.Model.PaymentService.PaymentGateway.PaymentStatus" assemblyname="HappyTrip.Model.PaymentService" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.Model.PaymentService.PaymentGateway.PaymentStatus" />
+      <From fullname="HappyTrip.Model.PaymentService.PaymentGateway.ServiceExceptionInfo" />
+      <From fullname="HappyTrip.Model.PaymentService.PaymentGateway.IPaymentService">
+        <To fullname="HappyTrip.Model.PaymentService.PaymentGateway.Card" assemblyname="HappyTrip.Model.PaymentService" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.PaymentService.PaymentGateway.PaymentInfo" assemblyname="HappyTrip.Model.PaymentService" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.Model.PaymentService.PaymentGateway.IPaymentServiceChannel">
+        <To fullname="HappyTrip.Model.PaymentService.PaymentGateway.IPaymentService" assemblyname="HappyTrip.Model.PaymentService" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.Model.PaymentService.PaymentGateway.PaymentServiceClient">
+        <To fullname="HappyTrip.Model.PaymentService.PaymentGateway.IPaymentService" assemblyname="HappyTrip.Model.PaymentService" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.PaymentService.PaymentGateway.Card" assemblyname="HappyTrip.Model.PaymentService" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.PaymentService.PaymentGateway.PaymentInfo" assemblyname="HappyTrip.Model.PaymentService" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.Model.PaymentService.PaymentNotProcessedFromServiceException" />
+    </TypeReferences>
+  </Assembly>
+</Dependencies>

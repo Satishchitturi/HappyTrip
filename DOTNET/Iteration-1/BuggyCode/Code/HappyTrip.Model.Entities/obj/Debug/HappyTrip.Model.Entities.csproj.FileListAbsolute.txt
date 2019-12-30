@@ -1,0 +1,9 @@
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.Model.Entities\bin\Debug\HappyTrip.Model.Entities.dll
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.Model.Entities\bin\Debug\HappyTrip.Model.Entities.pdb
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.Model.Entities\obj\Debug\ResolveAssemblyReference.cache
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.Model.Entities\obj\Debug\HappyTrip.Model.Entities.dll
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.Model.Entities\obj\Debug\HappyTrip.Model.Entities.pdb
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\HappyTrip.Model.Entities\bin\Debug\HappyTrip.Model.Entities.dll
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\HappyTrip.Model.Entities\bin\Debug\HappyTrip.Model.Entities.pdb
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\HappyTrip.Model.Entities\obj\Debug\HappyTrip.Model.Entities.dll
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\HappyTrip.Model.Entities\obj\Debug\HappyTrip.Model.Entities.pdb

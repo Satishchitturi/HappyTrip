@@ -1,0 +1,860 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 10.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="10.0">
+ <Namespaces>
+  <Namespace Name="HappyTripWebApp.Booking">
+   <Messages>
+    <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="Breaking">
+     <Issue Certainty="50" Level="Warning">Consider merging the types defined in 'HappyTripWebApp.Booking' with another namespace.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+ </Namespaces>
+ <Targets>
+  <Target Name="$(ProjectDir)/../../bin/HappyTripWebApp.dll">
+   <Modules>
+    <Module Name="happytripwebapp.dll">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Sign 'HappyTripWebApp.dll' with a strong name key.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="HappyTripWebApp">
+       <Types>
+        <Type Name="Confirmation" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.DateTime.ToString(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Booking" File="Confirmation.aspx.cs" Line="52">Because the behavior of 'DateTime.ToString(string)' could vary based on the current user's locale settings, replace this call in 'Confirmation.Page_Load(object, EventArgs)' with a call to 'DateTime.ToString(string, IFormatProvider)'. If the result of 'DateTime.ToString(string, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Booking" File="Confirmation.aspx.cs" Line="86">Because the behavior of 'DateTime.ToString(string)' could vary based on the current user's locale settings, replace this call in 'Confirmation.Page_Load(object, EventArgs)' with a call to 'DateTime.ToString(string, IFormatProvider)'. If the result of 'DateTime.ToString(string, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Decimal.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Booking" File="Confirmation.aspx.cs" Line="90">Because the behavior of 'decimal.ToString()' could vary based on the current user's locale settings, replace this call in 'Confirmation.Page_Load(object, EventArgs)' with a call to 'decimal.ToString(IFormatProvider)'. If the result of 'decimal.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Booking" File="Confirmation.aspx.cs" Line="50">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Confirmation.Page_Load(object, EventArgs)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Index" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#button_flight_search_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp" File="Index.aspx.cs" Line="61">Replace the call to 'string.operator ==(string, string)' in 'Index.button_flight_search_Click(object, EventArgs)' with a call to 'String.IsNullOrEmpty'.</Issue>
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp" File="Index.aspx.cs" Line="68">Replace the call to 'string.operator ==(string, string)' in 'Index.button_flight_search_Click(object, EventArgs)' with a call to 'String.IsNullOrEmpty'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#destination_autocomplete" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="autocomplete" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeCompoundWord" Certainty="80" Level="Error">The discrete term 'autocomplete' in member name 'Index.destination_autocomplete' should be expressed as a compound word, 'autoComplete'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#multi_city" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="multicity" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'multicity' in member name 'Index.multi_city' exists as a discrete term. If your usage is intended to be single word, case it as 'multicity' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#origin_autocomplete" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="autocomplete" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeCompoundWord" Certainty="80" Level="Error">The discrete term 'autocomplete' in member name 'Index.origin_autocomplete' should be expressed as a compound word, 'autoComplete'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Passengers" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnBook_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Convert.ToDateTime(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Booking" File="Passengers.aspx.cs" Line="98">Because the behavior of 'Convert.ToDateTime(string)' could vary based on the current user's locale settings, replace this call in 'Passengers.btnBook_Click(object, EventArgs)' with a call to 'Convert.ToDateTime(string, IFormatProvider)'. If the result of 'Convert.ToDateTime(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.DateTime.ToString(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Booking" File="Passengers.aspx.cs" Line="46">Because the behavior of 'DateTime.ToString(string)' could vary based on the current user's locale settings, replace this call in 'Passengers.Page_Load(object, EventArgs)' with a call to 'DateTime.ToString(string, IFormatProvider)'. If the result of 'DateTime.ToString(string, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Booking" File="Passengers.aspx.cs" Line="73">Because the behavior of 'DateTime.ToString(string)' could vary based on the current user's locale settings, replace this call in 'Passengers.Page_Load(object, EventArgs)' with a call to 'DateTime.ToString(string, IFormatProvider)'. If the result of 'DateTime.ToString(string, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Decimal.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Booking" File="Passengers.aspx.cs" Line="80">Because the behavior of 'decimal.ToString()' could vary based on the current user's locale settings, replace this call in 'Passengers.Page_Load(object, EventArgs)' with a call to 'decimal.ToString(IFormatProvider)'. If the result of 'decimal.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Booking" File="Passengers.aspx.cs" Line="44">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Passengers.Page_Load(object, EventArgs)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Payment_Screen" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnBook_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Booking" File="Payment_Screen.aspx.cs" Line="59">Modify 'Payment_Screen.btnBook_Click(object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt16(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Booking" File="Payment_Screen.aspx.cs" Line="44">Because the behavior of 'Convert.ToInt16(string)' could vary based on the current user's locale settings, replace this call in 'Payment_Screen.btnBook_Click(object, EventArgs)' with a call to 'Convert.ToInt16(string, IFormatProvider)'. If the result of 'Convert.ToInt16(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Booking" File="Payment_Screen.aspx.cs" Line="45">Because the behavior of 'Convert.ToInt16(string)' could vary based on the current user's locale settings, replace this call in 'Payment_Screen.btnBook_Click(object, EventArgs)' with a call to 'Convert.ToInt16(string, IFormatProvider)'. If the result of 'Convert.ToInt16(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lblUnSuccessful" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="UnSuccessful" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'UnSuccessful' in member name 'Payment_Screen.lblUnSuccessful' exists as a discrete term. If your usage is intended to be single word, case it as 'Unsuccessful' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.DateTime.ToString(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Booking" File="Payment_Screen.aspx.cs" Line="29">Because the behavior of 'DateTime.ToString(string)' could vary based on the current user's locale settings, replace this call in 'Payment_Screen.Page_Load(object, EventArgs)' with a call to 'DateTime.ToString(string, IFormatProvider)'. If the result of 'DateTime.ToString(string, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Booking" File="Payment_Screen.aspx.cs" Line="35">Because the behavior of 'DateTime.ToString(string)' could vary based on the current user's locale settings, replace this call in 'Payment_Screen.Page_Load(object, EventArgs)' with a call to 'DateTime.ToString(string, IFormatProvider)'. If the result of 'DateTime.ToString(string, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Booking" File="Payment_Screen.aspx.cs" Line="27">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Payment_Screen.Page_Load(object, EventArgs)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Results" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnBook_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Convert.ToDateTime(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp" File="Results.aspx.cs" Line="184">Because the behavior of 'Convert.ToDateTime(string)' could vary based on the current user's locale settings, replace this call in 'Results.btnBook_Click(object, EventArgs)' with a call to 'Convert.ToDateTime(string, IFormatProvider)'. If the result of 'Convert.ToDateTime(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp" File="Results.aspx.cs" Line="229">Because the behavior of 'Convert.ToDateTime(string)' could vary based on the current user's locale settings, replace this call in 'Results.btnBook_Click(object, EventArgs)' with a call to 'Convert.ToDateTime(string, IFormatProvider)'. If the result of 'Convert.ToDateTime(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt16(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp" File="Results.aspx.cs" Line="153">Because the behavior of 'Convert.ToInt16(string)' could vary based on the current user's locale settings, replace this call in 'Results.btnBook_Click(object, EventArgs)' with a call to 'Convert.ToInt16(string, IFormatProvider)'. If the result of 'Convert.ToInt16(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp" File="Results.aspx.cs" Line="151">Because the behavior of 'Convert.ToInt32(string)' could vary based on the current user's locale settings, replace this call in 'Results.btnBook_Click(object, EventArgs)' with a call to 'Convert.ToInt32(string, IFormatProvider)'. If the result of 'Convert.ToInt32(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int64.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp" File="Results.aspx.cs" Line="162">Because the behavior of 'long.ToString()' could vary based on the current user's locale settings, replace this call in 'Results.btnBook_Click(object, EventArgs)' with a call to 'long.ToString(IFormatProvider)'. If the result of 'long.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp" File="Results.aspx.cs" Line="207">Because the behavior of 'long.ToString()' could vary based on the current user's locale settings, replace this call in 'Results.btnBook_Click(object, EventArgs)' with a call to 'long.ToString(IFormatProvider)'. If the result of 'long.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp" File="Results.aspx.cs" Line="108">Modify 'Results.Page_Load(object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToDateTime(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp" File="Results.aspx.cs" Line="37">Because the behavior of 'Convert.ToDateTime(string)' could vary based on the current user's locale settings, replace this call in 'Results.Page_Load(object, EventArgs)' with a call to 'Convert.ToDateTime(string, IFormatProvider)'. If the result of 'Convert.ToDateTime(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp" File="Results.aspx.cs" Line="40">Because the behavior of 'Convert.ToDateTime(string)' could vary based on the current user's locale settings, replace this call in 'Results.Page_Load(object, EventArgs)' with a call to 'Convert.ToDateTime(string, IFormatProvider)'. If the result of 'Convert.ToDateTime(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp" File="Results.aspx.cs" Line="54">Because the behavior of 'Convert.ToDateTime(string)' could vary based on the current user's locale settings, replace this call in 'Results.Page_Load(object, EventArgs)' with a call to 'Convert.ToDateTime(string, IFormatProvider)'. If the result of 'Convert.ToDateTime(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp" File="Results.aspx.cs" Line="57">Because the behavior of 'Convert.ToDateTime(string)' could vary based on the current user's locale settings, replace this call in 'Results.Page_Load(object, EventArgs)' with a call to 'Convert.ToDateTime(string, IFormatProvider)'. If the result of 'Convert.ToDateTime(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt16(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp" File="Results.aspx.cs" Line="30">Because the behavior of 'Convert.ToInt16(string)' could vary based on the current user's locale settings, replace this call in 'Results.Page_Load(object, EventArgs)' with a call to 'Convert.ToInt16(string, IFormatProvider)'. If the result of 'Convert.ToInt16(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt64(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp" File="Results.aspx.cs" Line="25">Because the behavior of 'Convert.ToInt64(string)' could vary based on the current user's locale settings, replace this call in 'Results.Page_Load(object, EventArgs)' with a call to 'Convert.ToInt64(string, IFormatProvider)'. If the result of 'Convert.ToInt64(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp" File="Results.aspx.cs" Line="26">Because the behavior of 'Convert.ToInt64(string)' could vary based on the current user's locale settings, replace this call in 'Results.Page_Load(object, EventArgs)' with a call to 'Convert.ToInt64(string, IFormatProvider)'. If the result of 'Convert.ToInt64(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.DateTime.ToString(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp" File="Results.aspx.cs" Line="37">Because the behavior of 'DateTime.ToString(string)' could vary based on the current user's locale settings, replace this call in 'Results.Page_Load(object, EventArgs)' with a call to 'DateTime.ToString(string, IFormatProvider)'. If the result of 'DateTime.ToString(string, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp" File="Results.aspx.cs" Line="40">Because the behavior of 'DateTime.ToString(string)' could vary based on the current user's locale settings, replace this call in 'Results.Page_Load(object, EventArgs)' with a call to 'DateTime.ToString(string, IFormatProvider)'. If the result of 'DateTime.ToString(string, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp" File="Results.aspx.cs" Line="35">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Results.Page_Load(object, EventArgs)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SiteMaster" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#LoginStatus" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Login" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Replace the term 'Login' in member name 'SiteMaster.LoginStatus' with the preferred alternate 'LogOn'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UserLoginName" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Login" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Replace the term 'Login' in member name 'SiteMaster.UserLoginName' with the preferred alternate 'LogOn'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UpdateProfile" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#HyperLink1" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="HyperLink" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'HyperLink' in member name 'UpdateProfile.HyperLink1' exists as a discrete term. If your usage is intended to be single word, case it as 'Hyperlink' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#HyperLink2" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="HyperLink" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'HyperLink' in member name 'UpdateProfile.HyperLink2' exists as a discrete term. If your usage is intended to be single word, case it as 'Hyperlink' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.DateTime.ToString(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Account" File="UpdateProfile.aspx.cs" Line="26">Because the behavior of 'DateTime.ToString(string)' could vary based on the current user's locale settings, replace this call in 'UpdateProfile.Page_Load(object, EventArgs)' with a call to 'DateTime.ToString(string, IFormatProvider)'. If the result of 'DateTime.ToString(string, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Account" File="UpdateProfile.aspx.cs" Line="44">Because the behavior of 'DateTime.ToString(string)' could vary based on the current user's locale settings, replace this call in 'UpdateProfile.Page_Load(object, EventArgs)' with a call to 'DateTime.ToString(string, IFormatProvider)'. If the result of 'DateTime.ToString(string, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Submit_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Account" File="UpdateProfile.aspx.cs" Line="74">Modify 'UpdateProfile.Submit_Click(object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToChar(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Account" File="UpdateProfile.aspx.cs" Line="63">Because the behavior of 'Convert.ToChar(string)' could vary based on the current user's locale settings, replace this call in 'UpdateProfile.Submit_Click(object, EventArgs)' with a call to 'Convert.ToChar(string, IFormatProvider)'. If the result of 'Convert.ToChar(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToDateTime(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Account" File="UpdateProfile.aspx.cs" Line="64">Because the behavior of 'Convert.ToDateTime(string)' could vary based on the current user's locale settings, replace this call in 'UpdateProfile.Submit_Click(object, EventArgs)' with a call to 'Convert.ToDateTime(string, IFormatProvider)'. If the result of 'Convert.ToDateTime(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="HappyTripWebApp.Account">
+       <Types>
+        <Type Name="ChangePass" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#HyperLink1" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="HyperLink" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'HyperLink' in member name 'ChangePass.HyperLink1' exists as a discrete term. If your usage is intended to be single word, case it as 'Hyperlink' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#HyperLink2" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="HyperLink" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'HyperLink' in member name 'ChangePass.HyperLink2' exists as a discrete term. If your usage is intended to be single word, case it as 'Hyperlink' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#HyperLink3" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="HyperLink" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'HyperLink' in member name 'ChangePass.HyperLink3' exists as a discrete term. If your usage is intended to be single word, case it as 'Hyperlink' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ChangePassSuccess" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#HyperLink1" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="HyperLink" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'HyperLink' in member name 'ChangePassSuccess.HyperLink1' exists as a discrete term. If your usage is intended to be single word, case it as 'Hyperlink' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#HyperLink2" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="HyperLink" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'HyperLink' in member name 'ChangePassSuccess.HyperLink2' exists as a discrete term. If your usage is intended to be single word, case it as 'Hyperlink' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#HyperLink3" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="HyperLink" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'HyperLink' in member name 'ChangePassSuccess.HyperLink3' exists as a discrete term. If your usage is intended to be single word, case it as 'Hyperlink' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Login" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Login" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="95" Level="Error">Replace the term 'Login' in type name 'Login' with the preferred alternate 'LogOn'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#LoginUser" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Login" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Replace the term 'Login' in member name 'Login.LoginUser' with the preferred alternate 'LogOn'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LoginUser_LoggedIn(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Login" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Account" File="Login.aspx.cs" Line="23">Replace the term 'Login' in member name 'Login.LoginUser_LoggedIn(object, EventArgs)' with the preferred alternate 'LogOn'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RegisterHyperLink" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="HyperLink" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'HyperLink' in member name 'Login.RegisterHyperLink' exists as a discrete term. If your usage is intended to be single word, case it as 'Hyperlink' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Register" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#bt_Submit_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Account" File="Register.aspx.cs" Line="78">Modify 'Register.bt_Submit_Click(object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="System.DateTime.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Account" File="Register.aspx.cs" Line="31">Because the behavior of 'DateTime.Parse(string)' could vary based on the current user's locale settings, replace this call in 'Register.bt_Submit_Click(object, EventArgs)' with a call to 'DateTime.Parse(string, IFormatProvider)'. If the result of 'DateTime.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#EMailId" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="EMail" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'EMail' in member name 'Register.EMailId' exists as a discrete term. If your usage is intended to be single word, case it as 'Email' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#hlCheckAvailaibilty_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Account" File="Register.aspx.cs" Line="108">Modify 'Register.hlCheckAvailaibilty_Click(object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Account" File="Register.aspx.cs" Line="96">Replace the call to 'string.operator ==(string, string)' in 'Register.hlCheckAvailaibilty_Click(object, EventArgs)' with a call to 'String.IsNullOrEmpty'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lb_error_username" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="username" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeCompoundWord" Certainty="80" Level="Error">The discrete term 'username' in member name 'Register.lb_error_username' should be expressed as a compound word, 'userName'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="HappyTripWebApp.Admin">
+       <Types>
+        <Type Name="Add_Schedule" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnAdd_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="Add_Schedule.aspx.cs" Line="197">Modify 'Add_Schedule.btnAdd_Click(object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="System.Decimal.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="Add_Schedule.aspx.cs" Line="180">Because the behavior of 'decimal.Parse(string)' could vary based on the current user's locale settings, replace this call in 'Add_Schedule.btnAdd_Click(object, EventArgs)' with a call to 'decimal.Parse(string, IFormatProvider)'. If the result of 'decimal.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Double.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="Add_Schedule.aspx.cs" Line="146">Because the behavior of 'double.ToString()' could vary based on the current user's locale settings, replace this call in 'Add_Schedule.btnAdd_Click(object, EventArgs)' with a call to 'double.ToString(IFormatProvider)'. If the result of 'double.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="Add_Schedule.aspx.cs" Line="146">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'Add_Schedule.btnAdd_Click(object, EventArgs)' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="Add_Schedule.aspx.cs" Line="147">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Add_Schedule.btnAdd_Click(object, EventArgs)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int64.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="Add_Schedule.aspx.cs" Line="126">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'Add_Schedule.btnAdd_Click(object, EventArgs)' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="Add_Schedule.aspx.cs" Line="132">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'Add_Schedule.btnAdd_Click(object, EventArgs)' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="Add_Schedule.aspx.cs" Line="151">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'Add_Schedule.btnAdd_Click(object, EventArgs)' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.TimeSpan.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="Add_Schedule.aspx.cs" Line="140">Because the behavior of 'TimeSpan.Parse(string)' could vary based on the current user's locale settings, replace this call in 'Add_Schedule.btnAdd_Click(object, EventArgs)' with a call to 'TimeSpan.Parse(string, IFormatProvider)'. If the result of 'TimeSpan.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="Add_Schedule.aspx.cs" Line="144">Because the behavior of 'TimeSpan.Parse(string)' could vary based on the current user's locale settings, replace this call in 'Add_Schedule.btnAdd_Click(object, EventArgs)' with a call to 'TimeSpan.Parse(string, IFormatProvider)'. If the result of 'TimeSpan.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#clear()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="Add_Schedule.aspx.cs" Line="46">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Add_Schedule.clear()' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="Add_Schedule.aspx.cs" Line="47">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Add_Schedule.clear()' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="Add_Schedule.aspx.cs" Line="54">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Add_Schedule.clear()' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="Add_Schedule.aspx.cs" Line="55">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Add_Schedule.clear()' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="Add_Schedule.aspx.cs" Line="99">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Add_Schedule.clear()' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int64.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="Add_Schedule.aspx.cs" Line="72">Because the behavior of 'long.ToString()' could vary based on the current user's locale settings, replace this call in 'Add_Schedule.clear()' with a call to 'long.ToString(IFormatProvider)'. If the result of 'long.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="Add_Schedule.aspx.cs" Line="80">Because the behavior of 'long.ToString()' could vary based on the current user's locale settings, replace this call in 'Add_Schedule.clear()' with a call to 'long.ToString(IFormatProvider)'. If the result of 'long.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#dpAirlineName_SelectedIndexChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="Add_Schedule.aspx.cs" Line="211">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'Add_Schedule.dpAirlineName_SelectedIndexChanged(object, EventArgs)' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int64.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="Add_Schedule.aspx.cs" Line="216">Because the behavior of 'long.ToString()' could vary based on the current user's locale settings, replace this call in 'Add_Schedule.dpAirlineName_SelectedIndexChanged(object, EventArgs)' with a call to 'long.ToString(IFormatProvider)'. If the result of 'long.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="AddFlight" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnAdd_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="AddFlight.aspx.cs" Line="110">Modify 'AddFlight.btnAdd_Click(object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="AddFlight.aspx.cs" Line="68">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'AddFlight.btnAdd_Click(object, EventArgs)' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="AddFlight.aspx.cs" Line="91">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'AddFlight.btnAdd_Click(object, EventArgs)' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ddlAirLine" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="AirLine" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'AirLine' in member name 'AddFlight.ddlAirLine' exists as a discrete term. If your usage is intended to be single word, case it as 'Airline' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="AddRoute" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnSave_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="AddRoute.aspx.cs" Line="80">Modify 'AddRoute.btnSave_Click(object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="System.Double.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="AddRoute.aspx.cs" Line="68">Because the behavior of 'double.Parse(string)' could vary based on the current user's locale settings, replace this call in 'AddRoute.btnSave_Click(object, EventArgs)' with a call to 'double.Parse(string, IFormatProvider)'. If the result of 'double.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int64.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="AddRoute.aspx.cs" Line="57">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'AddRoute.btnSave_Click(object, EventArgs)' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="AddRoute.aspx.cs" Line="63">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'AddRoute.btnSave_Click(object, EventArgs)' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="AddRoute.aspx.cs" Line="67">Replace the call to 'string.operator !=(string, string)' in 'AddRoute.btnSave_Click(object, EventArgs)' with a call to 'String.IsNullOrEmpty'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Int64.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="AddRoute.aspx.cs" Line="29">Because the behavior of 'long.ToString()' could vary based on the current user's locale settings, replace this call in 'AddRoute.Page_Load(object, EventArgs)' with a call to 'long.ToString(IFormatProvider)'. If the result of 'long.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="AddRoute.aspx.cs" Line="37">Because the behavior of 'long.ToString()' could vary based on the current user's locale settings, replace this call in 'AddRoute.Page_Load(object, EventArgs)' with a call to 'long.ToString(IFormatProvider)'. If the result of 'long.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="EditFlight" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#BindData()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditFlight.aspx.cs" Line="29">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'EditFlight.BindData()' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditFlight.aspx.cs" Line="34">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'EditFlight.BindData()' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnUpdate_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditFlight.aspx.cs" Line="68">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'EditFlight.btnUpdate_Click(object, EventArgs)' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditFlight.aspx.cs" Line="71">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'EditFlight.btnUpdate_Click(object, EventArgs)' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ddlAirLine" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="AirLine" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'AirLine' in member name 'EditFlight.ddlAirLine' exists as a discrete term. If your usage is intended to be single word, case it as 'Airline' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GridView1_RowCancelingEdit(System.Object,System.Web.UI.WebControls.GridViewCancelEditEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditFlight.aspx.cs" Line="93">Consider changing the type of parameter 'e' in 'EditFlight.GridView1_RowCancelingEdit(object, GridViewCancelEditEventArgs)' from 'GridViewCancelEditEventArgs' to its base type 'CancelEventArgs'. This method appears to only require base class members in its implementation. Suppress this violation if there is a compelling reason to require the more derived type in the method signature.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GridView1_RowUpdating(System.Object,System.Web.UI.WebControls.GridViewUpdateEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditFlight.aspx.cs" Line="113">Because the behavior of 'Convert.ToInt32(string)' could vary based on the current user's locale settings, replace this call in 'EditFlight.GridView1_RowUpdating(object, GridViewUpdateEventArgs)' with a call to 'Convert.ToInt32(string, IFormatProvider)'. If the result of 'Convert.ToInt32(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditFlight.aspx.cs" Line="128">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'EditFlight.GridView1_RowUpdating(object, GridViewUpdateEventArgs)' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditFlight.aspx.cs" Line="131">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'EditFlight.GridView1_RowUpdating(object, GridViewUpdateEventArgs)' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="EditSchedule" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#BindData()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Convert.ToInt64(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="23">Because the behavior of 'Convert.ToInt64(string)' could vary based on the current user's locale settings, replace this call in 'EditSchedule.BindData()' with a call to 'Convert.ToInt64(string, IFormatProvider)'. If the result of 'Convert.ToInt64(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnUpdate_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Convert.ToInt64(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="226">Because the behavior of 'Convert.ToInt64(string)' could vary based on the current user's locale settings, replace this call in 'EditSchedule.btnUpdate_Click(object, EventArgs)' with a call to 'Convert.ToInt64(string, IFormatProvider)'. If the result of 'Convert.ToInt64(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Double.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="218">Because the behavior of 'double.ToString()' could vary based on the current user's locale settings, replace this call in 'EditSchedule.btnUpdate_Click(object, EventArgs)' with a call to 'double.ToString(IFormatProvider)'. If the result of 'double.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="218">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'EditSchedule.btnUpdate_Click(object, EventArgs)' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="219">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'EditSchedule.btnUpdate_Click(object, EventArgs)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int64.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="205">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'EditSchedule.btnUpdate_Click(object, EventArgs)' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="210">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'EditSchedule.btnUpdate_Click(object, EventArgs)' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="223">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'EditSchedule.btnUpdate_Click(object, EventArgs)' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.TimeSpan.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="216">Because the behavior of 'TimeSpan.Parse(string)' could vary based on the current user's locale settings, replace this call in 'EditSchedule.btnUpdate_Click(object, EventArgs)' with a call to 'TimeSpan.Parse(string, IFormatProvider)'. If the result of 'TimeSpan.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="217">Because the behavior of 'TimeSpan.Parse(string)' could vary based on the current user's locale settings, replace this call in 'EditSchedule.btnUpdate_Click(object, EventArgs)' with a call to 'TimeSpan.Parse(string, IFormatProvider)'. If the result of 'TimeSpan.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="230">Because the behavior of 'TimeSpan.Parse(string)' could vary based on the current user's locale settings, replace this call in 'EditSchedule.btnUpdate_Click(object, EventArgs)' with a call to 'TimeSpan.Parse(string, IFormatProvider)'. If the result of 'TimeSpan.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="231">Because the behavior of 'TimeSpan.Parse(string)' could vary based on the current user's locale settings, replace this call in 'EditSchedule.btnUpdate_Click(object, EventArgs)' with a call to 'TimeSpan.Parse(string, IFormatProvider)'. If the result of 'TimeSpan.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#clear()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="90">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'EditSchedule.clear()' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="91">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'EditSchedule.clear()' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="98">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'EditSchedule.clear()' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="99">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'EditSchedule.clear()' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="134">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'EditSchedule.clear()' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int64.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="116">Because the behavior of 'long.ToString()' could vary based on the current user's locale settings, replace this call in 'EditSchedule.clear()' with a call to 'long.ToString(IFormatProvider)'. If the result of 'long.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="124">Because the behavior of 'long.ToString()' could vary based on the current user's locale settings, replace this call in 'EditSchedule.clear()' with a call to 'long.ToString(IFormatProvider)'. If the result of 'long.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#dpAirlineName_SelectedIndexChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="156">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'EditSchedule.dpAirlineName_SelectedIndexChanged(object, EventArgs)' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int64.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="160">Because the behavior of 'long.ToString()' could vary based on the current user's locale settings, replace this call in 'EditSchedule.dpAirlineName_SelectedIndexChanged(object, EventArgs)' with a call to 'long.ToString(IFormatProvider)'. If the result of 'long.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GridView1_RowCancelingEdit(System.Object,System.Web.UI.WebControls.GridViewCancelEditEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="248">Consider changing the type of parameter 'e' in 'EditSchedule.GridView1_RowCancelingEdit(object, GridViewCancelEditEventArgs)' from 'GridViewCancelEditEventArgs' to its base type 'CancelEventArgs'. This method appears to only require base class members in its implementation. Suppress this violation if there is a compelling reason to require the more derived type in the method signature.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GridView1_RowUpdating(System.Object,System.Web.UI.WebControls.GridViewUpdateEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="277">Because the behavior of 'Convert.ToInt32(string)' could vary based on the current user's locale settings, replace this call in 'EditSchedule.GridView1_RowUpdating(object, GridViewUpdateEventArgs)' with a call to 'Convert.ToInt32(string, IFormatProvider)'. If the result of 'Convert.ToInt32(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt64(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="306">Because the behavior of 'Convert.ToInt64(string)' could vary based on the current user's locale settings, replace this call in 'EditSchedule.GridView1_RowUpdating(object, GridViewUpdateEventArgs)' with a call to 'Convert.ToInt64(string, IFormatProvider)'. If the result of 'Convert.ToInt64(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int64.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="293">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'EditSchedule.GridView1_RowUpdating(object, GridViewUpdateEventArgs)' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="298">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'EditSchedule.GridView1_RowUpdating(object, GridViewUpdateEventArgs)' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="303">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'EditSchedule.GridView1_RowUpdating(object, GridViewUpdateEventArgs)' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Convert.ToInt64(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="45">Because the behavior of 'Convert.ToInt64(string)' could vary based on the current user's locale settings, replace this call in 'EditSchedule.Page_Load(object, EventArgs)' with a call to 'Convert.ToInt64(string, IFormatProvider)'. If the result of 'Convert.ToInt64(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="54">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'EditSchedule.Page_Load(object, EventArgs)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="56">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'EditSchedule.Page_Load(object, EventArgs)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="57">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'EditSchedule.Page_Load(object, EventArgs)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="59">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'EditSchedule.Page_Load(object, EventArgs)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="60">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'EditSchedule.Page_Load(object, EventArgs)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="62">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'EditSchedule.Page_Load(object, EventArgs)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int64.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="52">Because the behavior of 'long.ToString()' could vary based on the current user's locale settings, replace this call in 'EditSchedule.Page_Load(object, EventArgs)' with a call to 'long.ToString(IFormatProvider)'. If the result of 'long.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="53">Because the behavior of 'long.ToString()' could vary based on the current user's locale settings, replace this call in 'EditSchedule.Page_Load(object, EventArgs)' with a call to 'long.ToString(IFormatProvider)'. If the result of 'long.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="EditSchedule.aspx.cs" Line="63">Because the behavior of 'long.ToString()' could vary based on the current user's locale settings, replace this call in 'EditSchedule.Page_Load(object, EventArgs)' with a call to 'long.ToString(IFormatProvider)'. If the result of 'long.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ManageCity" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#grdCity_RowCancelingEdit(System.Object,System.Web.UI.WebControls.GridViewCancelEditEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="ManageCity.aspx.cs" Line="94">Consider changing the type of parameter 'e' in 'ManageCity.grdCity_RowCancelingEdit(object, GridViewCancelEditEventArgs)' from 'GridViewCancelEditEventArgs' to its base type 'CancelEventArgs'. This method appears to only require base class members in its implementation. Suppress this violation if there is a compelling reason to require the more derived type in the method signature.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#grdCity_RowUpdating(System.Object,System.Web.UI.WebControls.GridViewUpdateEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="ManageCity.aspx.cs" Line="56">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'ManageCity.grdCity_RowUpdating(object, GridViewUpdateEventArgs)' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ManageFlights" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ItemsGet()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="ManageFlights.aspx.cs" Line="55">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'ManageFlights.ItemsGet()' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="ManageFlights.aspx.cs" Line="55">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'ManageFlights.ItemsGet()' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="RouteUI" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#BindData()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="RouteUI.aspx.cs" Line="26">Be sure to set the DataTable Locale property wherever 'RouteUI.BindData()' creates an instance of that type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GridView1_RowCancelingEdit(System.Object,System.Web.UI.WebControls.GridViewCancelEditEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="RouteUI.aspx.cs" Line="71">Consider changing the type of parameter 'e' in 'RouteUI.GridView1_RowCancelingEdit(object, GridViewCancelEditEventArgs)' from 'GridViewCancelEditEventArgs' to its base type 'CancelEventArgs'. This method appears to only require base class members in its implementation. Suppress this violation if there is a compelling reason to require the more derived type in the method signature.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GridView1_RowUpdating(System.Object,System.Web.UI.WebControls.GridViewUpdateEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Int64.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="RouteUI.aspx.cs" Line="91">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'RouteUI.GridView1_RowUpdating(object, GridViewUpdateEventArgs)' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="RouteUI.aspx.cs" Line="92">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'RouteUI.GridView1_RowUpdating(object, GridViewUpdateEventArgs)' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Schedule_Flight" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ItemsGet()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="Schedule_Flight.aspx.cs" Line="89">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Schedule_Flight.ItemsGet()' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="Schedule_Flight.aspx.cs" Line="89">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Schedule_Flight.ItemsGet()' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="WebForm1" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnSave_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="AddCity.aspx.cs" Line="52">Modify 'WebForm1.btnSave_Click(object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="System.Int64.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="AddCity.aspx.cs" Line="29">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'WebForm1.btnSave_Click(object, EventArgs)' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#clear()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Int64.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Admin" File="AddCity.aspx.cs" Line="71">Because the behavior of 'long.ToString()' could vary based on the current user's locale settings, replace this call in 'WebForm1.clear()' with a call to 'long.ToString(IFormatProvider)'. If the result of 'long.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="HappyTripWebApp.Booking">
+       <Types>
+        <Type Name="Payment_Success" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.DateTime.ToString(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Booking" File="Payment_Success.aspx.cs" Line="33">Because the behavior of 'DateTime.ToString(string)' could vary based on the current user's locale settings, replace this call in 'Payment_Success.Page_Load(object, EventArgs)' with a call to 'DateTime.ToString(string, IFormatProvider)'. If the result of 'DateTime.ToString(string, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Booking" File="Payment_Success.aspx.cs" Line="71">Because the behavior of 'DateTime.ToString(string)' could vary based on the current user's locale settings, replace this call in 'Payment_Success.Page_Load(object, EventArgs)' with a call to 'DateTime.ToString(string, IFormatProvider)'. If the result of 'DateTime.ToString(string, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:27:20Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTripWebApp\Booking" File="Payment_Success.aspx.cs" Line="34">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Payment_Success.Page_Load(object, EventArgs)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>Assemblies should have valid strong names</Name>
+   <Description>Either the assembly has no strong name, an invalid one, or the strong name is valid only because of the computer configuration. The assembly should not be deployed in this state. The most common causes of this are: 1) The assembly's contents were modified after it was signed. 2) The signing process failed. 3) The assembly was delay-signed. 4) A registry key existed that allowed the check to pass (where it would not have otherwise).</Description>
+   <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182127(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="DesignRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020">
+   <Name>Avoid namespaces with few types</Name>
+   <Description>A namespace should generally have more than five types.</Description>
+   <Resolution Name="Default">Consider merging the types defined in '{0}' with another namespace.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182130(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">Warning</MessageLevel>
+   <File Name="DesignRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702">
+   <Name>Compound words should be cased correctly</Name>
+   <Description>Avoid creating compound words from terms which exist in the dictionary as discrete terms. Do not create a compound word such as 'StopWatch' or 'PopUp'. These terms are recognized in the dictionary and should be cased as 'Stopwatch' and 'Popup'.</Description>
+   <Resolution Name="MemberShouldBeCompoundWord">The discrete term '{0}' in member name {1} should be expressed as a compound word, '{2}'.</Resolution>
+   <Resolution Name="MemberShouldBeDiscreteTerm">The compound word '{0}' in member name {1} exists as a discrete term. If your usage is intended to be single word, case it as '{2}' or strip the first token entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264474(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="80">Error</MessageLevel>
+   <File Name="NamingRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011">
+   <Name>Consider passing base types as parameters</Name>
+   <Description>Using base types as parameters to methods improves re-use of these methods if you only use methods &amp; properties from the parameter's base class. E.g. use Stream instead of FileStream as a parameter when only calling Stream.Read(), this makes the method work on all kind of streams instead of just File streams.</Description>
+   <Resolution Name="Default">Consider changing the type of parameter {0} in {1} from {2} to its base type {3}. This method appears to only require base class members in its implementation. Suppress this violation if there is a compelling reason to require the more derived type in the method signature.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/3hk32yyz(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">Error</MessageLevel>
+   <File Name="DesignRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031">
+   <Name>Do not catch general exception types</Name>
+   <Description>You should not catch Exception or SystemException. Catching generic exception types can hide run-time problems from the library user, and can complicate debugging. You should catch only those exceptions that you can handle gracefully.</Description>
+   <Resolution Name="Default">Modify {0} to catch a more specific exception than {1} or rethrow the exception.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182137(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="DesignRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306">
+   <Name>Set locale for data types</Name>
+   <Description>In most cases, Locale should be explicitly set to CultureInfo.InvariantCulture on DataSet and DataTable instances. Upon creation of a DataSet or DataTable instance, the Locale is set to the current culture. In most cases, the Locale should be set to CultureInfo.InvariantCulture to guarantee proper sorting behavior in all cultures.</Description>
+   <Resolution Name="Default">Be sure to set the {0} Locale property wherever {1} creates an instance of that type.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182188(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="GlobalizationRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+   <Name>Specify IFormatProvider</Name>
+   <Description>If an overload exists that takes an IFormatProvider argument, it should always be called in favor of an overload that does not. Some methods in the runtime convert a value to or from a string representation and take a string parameter that contains one or more characters, called format specifiers, which indicate how the value is to be converted. If the meaning of the format specifier varies by culture, a formatting object supplies the actual characters used in the string representation. In scenarios where sorting and comparison behavior should never change between cultures, specify CultureInfo.InvariantCulture, otherwise, specify CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="IFormatProviderAlternate">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be based on input from the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify {4}.</Resolution>
+   <Resolution Name="IFormatProviderAlternateString">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify {4}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182190(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="GlobalizationRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820">
+   <Name>Test for empty strings using string length</Name>
+   <Description>To test for empty strings, check if String.Length is equal to zero. Constructs such as "".Equals(someString) and String.Empty.Equals(someString) are less efficient than testing the string length. Replace these with checks for someString.Length == 0.</Description>
+   <Resolution Name="IsNullOrEmpty">Replace the call to {0} in {1} with a call to 'String.IsNullOrEmpty'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182279(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726">
+   <Name>Use preferred terms</Name>
+   <Description>Use preferred terms over deprecated alternates.</Description>
+   <Resolution Name="Member">Replace the term '{0}' in member name {1} with the preferred alternate '{2}'.</Resolution>
+   <Resolution Name="Type">Replace the term '{0}' in type name {1} with the preferred alternate '{2}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182258(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="NamingRules.dll" Version="10.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

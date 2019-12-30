@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dependencies name="HappyTrip.UnitTestLayer" version="1.0.0.0">
+  <Assembly name="HappyTrip.UnitTestLayer" version="1.0.0.0">
+    <References>
+      <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="Microsoft.VisualStudio.QualityTools.UnitTestFramework" fullName="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="10.0.0.0" />
+      <Reference name="HappyTrip.DataAccessLayer_Accessor" fullName="HappyTrip.DataAccessLayer_Accessor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" version="0.0.0.0" />
+      <Reference name="HappyTrip.Model.BusinessLayer" fullName="HappyTrip.Model.BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" version="1.0.0.0" />
+      <Reference name="HappyTrip.Model.Entities" fullName="HappyTrip.Model.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" version="1.0.0.0" />
+    </References>
+    <TypeReferences>
+      <From fullname="HappyTrip.UnitTestLayer.BookingDAOTest">
+        <To fullname="HappyTrip.DataAccessLayer.Transaction.BookingDAO_Accessor" assemblyname="HappyTrip.DataAccessLayer_Accessor" assemblyversion="0.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.UnitTestLayer.SearchManagerTest" />
+      <From fullname="HappyTrip.UnitTestLayer.AirLineManagerTest">
+        <To fullname="HappyTrip.Model.BusinessLayer.AirTravel.AirLineManager" assemblyname="HappyTrip.Model.BusinessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Airline" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.UnitTestLayer.SearchResultTest">
+        <To fullname="HappyTrip.Model.Entities.AirTravel.SearchResult" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.TravelSchedule" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+    </TypeReferences>
+  </Assembly>
+</Dependencies>

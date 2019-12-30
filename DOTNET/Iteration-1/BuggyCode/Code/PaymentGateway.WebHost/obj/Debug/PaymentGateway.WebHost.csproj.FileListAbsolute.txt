@@ -1,0 +1,14 @@
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\PaymentGateway.WebHost\bin\PaymentGateway.WebHost.dll
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\PaymentGateway.WebHost\bin\PaymentGateway.WebHost.pdb
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\PaymentGateway.WebHost\bin\PaymentGateway.dll
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\PaymentGateway.WebHost\bin\PaymentGateway.pdb
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\PaymentGateway.WebHost\obj\Debug\ResolveAssemblyReference.cache
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\PaymentGateway.WebHost\obj\Debug\PaymentGateway.WebHost.dll
+E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\PaymentGateway.WebHost\obj\Debug\PaymentGateway.WebHost.pdb
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\PaymentGateway.WebHost\bin\PaymentGateway.WebHost.dll
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\PaymentGateway.WebHost\bin\PaymentGateway.WebHost.pdb
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\PaymentGateway.WebHost\bin\PaymentGateway.dll
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\PaymentGateway.WebHost\bin\PaymentGateway.pdb
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\PaymentGateway.WebHost\obj\Debug\PaymentGateway.WebHost.csprojResolveAssemblyReference.cache
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\PaymentGateway.WebHost\obj\Debug\PaymentGateway.WebHost.dll
+H:\Skill_Assure_Projects\For Student\HappyTrip\DOTNET\Iteration-1\BuggyCode\Code\PaymentGateway.WebHost\obj\Debug\PaymentGateway.WebHost.pdb

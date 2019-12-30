@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dependencies name="HappyTrip.DataAccessLayer" version="1.0.0.0">
+  <Assembly name="HappyTrip.DataAccessLayer" version="1.0.0.0">
+    <References>
+      <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Data" fullName="System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="HappyTrip.Model.Entities" fullName="HappyTrip.Model.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" version="1.0.0.0" />
+      <Reference name="System.Configuration" fullName="System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="4.0.0.0" />
+      <Reference name="System.Core" fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+    </References>
+    <TypeReferences>
+      <From fullname="HappyTrip.DataAccessLayer.Transaction.InvalidBookingTypeDAOException" />
+      <From fullname="HappyTrip.DataAccessLayer.Common.ConnectToDatabaseException" />
+      <From fullname="HappyTrip.DataAccessLayer.Common.DAO" />
+      <From fullname="HappyTrip.DataAccessLayer.AirTravel.RouteDAOException" />
+      <From fullname="HappyTrip.DataAccessLayer.Search.SearchDAOFactory">
+        <To fullname="HappyTrip.DataAccessLayer.Search.ISearchDAO" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.DataAccessLayer.AirTravel.IRouteDAO">
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Route" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.DataAccessLayer.AirTravel.RouteDAO">
+        <To fullname="HappyTrip.DataAccessLayer.Common.DAO" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.DataAccessLayer.AirTravel.IRouteDAO" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Route" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Common.City" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.DataAccessLayer.Common.ConnectToDatabaseException" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.DataAccessLayer.AirTravel.IScheduleDAO">
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Schedule" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.FlightCost" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.DataAccessLayer.AirTravel.ScheduleDAO">
+        <To fullname="HappyTrip.DataAccessLayer.Common.DAO" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.DataAccessLayer.AirTravel.IScheduleDAO" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Schedule" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Airline" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Flight" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Common.City" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Route" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.FlightCost" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.DataAccessLayer.Common.ConnectToDatabaseException" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.DataAccessLayer.AirTravel.ScheduleDAOException" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.DataAccessLayer.Transaction.IBookingDAO">
+        <To fullname="HappyTrip.Model.Entities.Transaction.Booking" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.DataAccessLayer.Transaction.BookingDAO">
+        <To fullname="HappyTrip.DataAccessLayer.Common.DAO" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.DataAccessLayer.Transaction.IBookingDAO" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.DataAccessLayer.Transaction.IBookingDAOImpl" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Transaction.BookingTypes" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.DataAccessLayer.Transaction.InvalidBookingTypeDAOException" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Transaction.Booking" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.DataAccessLayer.Common.ConnectToDatabaseException" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.DataAccessLayer.Transaction.AirTravelBookingException" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.DataAccessLayer.Transaction.BookingDAOException" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.DataAccessLayer.Transaction.AirTravelBookingException" />
+      <From fullname="HappyTrip.DataAccessLayer.Common.CityDAOException" />
+      <From fullname="HappyTrip.DataAccessLayer.Transaction.IBookingDAOImpl">
+        <To fullname="HappyTrip.Model.Entities.Transaction.Booking" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.DataAccessLayer.Transaction.AirTravelBookingDAOImpl">
+        <To fullname="HappyTrip.DataAccessLayer.Transaction.IBookingDAOImpl" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Transaction.Booking" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Transaction.FlightBooking" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Transaction.Passenger" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Schedule" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.DataAccessLayer.Transaction.AirTravelBookingException" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.DataAccessLayer.Common.CityDAOFactory">
+        <To fullname="HappyTrip.DataAccessLayer.Common.ICityDAO" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.DataAccessLayer.Search.ISearchDAO">
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Schedule" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.TravelClass" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Common.City" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Schedules" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.SearchInfo" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.DataAccessLayer.AirTravel.IFlightDAO">
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Flight" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.FlightClass" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.DataAccessLayer.AirTravel.AirTravelDAOFactory">
+        <To fullname="HappyTrip.DataAccessLayer.AirTravel.IAirlineDAO" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.DataAccessLayer.AirTravel.IFlightDAO" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.DataAccessLayer.AirTravel.IScheduleDAO" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.DataAccessLayer.AirTravel.IRouteDAO" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.DataAccessLayer.Search.SearchDAO">
+        <To fullname="HappyTrip.DataAccessLayer.Common.DAO" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.DataAccessLayer.Search.ISearchDAO" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Schedules" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.SearchInfo" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Schedule" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Airline" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Flight" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.FlightClass" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.FlightCost" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Common.City" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Route" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.DataAccessLayer.Common.ConnectToDatabaseException" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Common.State" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.TravelClass" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.DataAccessLayer.Common.ICityDAO">
+        <To fullname="HappyTrip.Model.Entities.Common.City" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Common.State" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.DataAccessLayer.Common.CityDAO">
+        <To fullname="HappyTrip.DataAccessLayer.Common.DAO" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.DataAccessLayer.Common.ICityDAO" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Common.State" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.DataAccessLayer.Common.ConnectToDatabaseException" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Common.City" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.DataAccessLayer.Common.CityDAOException" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.DataAccessLayer.AirTravel.RouteNotAvailableForScheduleDAOException" />
+      <From fullname="HappyTrip.DataAccessLayer.AirTravel.IAirlineDAO">
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Airline" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.DataAccessLayer.Common.AirlineDAOException" />
+      <From fullname="HappyTrip.DataAccessLayer.Transaction.BookingDAOException" />
+      <From fullname="HappyTrip.DataAccessLayer.Transaction.BookingDAOFactory">
+        <To fullname="HappyTrip.DataAccessLayer.Transaction.IBookingDAO" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Transaction.BookingTypes" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.DataAccessLayer.Transaction.InvalidBookingTypeDAOException" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.DataAccessLayer.AirTravel.FlightDAO">
+        <To fullname="HappyTrip.DataAccessLayer.Common.DAO" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.DataAccessLayer.AirTravel.IFlightDAO" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Flight" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.DataAccessLayer.Common.ConnectToDatabaseException" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.FlightClass" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.DataAccessLayer.AirTravel.AirlineDAO">
+        <To fullname="HappyTrip.DataAccessLayer.Common.DAO" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.DataAccessLayer.AirTravel.IAirlineDAO" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Airline" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.DataAccessLayer.Common.ConnectToDatabaseException" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.DataAccessLayer.Search.SearchFlightDAOException" />
+      <From fullname="HappyTrip.DataAccessLayer.Common.FlightDAOException" />
+      <From fullname="HappyTrip.DataAccessLayer.Search.FlightAvailabilityDAOException" />
+      <From fullname="HappyTrip.DataAccessLayer.AirTravel.ScheduleDAOException" />
+      <From fullname="HappyTrip.DataAccessLayer.Common.StateDAOException" />
+      <From fullname="HappyTrip.DataAccessLayer.Transaction.BookingDAOImplFactory">
+        <To fullname="HappyTrip.Model.Entities.Transaction.BookingTypes" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.DataAccessLayer.Transaction.IBookingDAOImpl" assemblyname="HappyTrip.DataAccessLayer" assemblyversion="1.0.0.0" />
+      </From>
+    </TypeReferences>
+  </Assembly>
+</Dependencies>

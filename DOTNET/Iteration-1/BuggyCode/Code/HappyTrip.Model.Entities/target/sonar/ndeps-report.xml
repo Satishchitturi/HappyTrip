@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dependencies name="HappyTrip.Model.Entities" version="1.0.0.0">
+  <Assembly name="HappyTrip.Model.Entities" version="1.0.0.0">
+    <References>
+      <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Web" fullName="System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="4.0.0.0" />
+    </References>
+    <TypeReferences>
+      <From fullname="HappyTrip.Model.Entities.Transaction.Booking">
+        <To fullname="HappyTrip.Model.Entities.Transaction.BookingTypes" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Transaction.BookingContact" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Transaction.Payment" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Transaction.Cancelation" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.Model.Entities.AirTravel.FlightClass">
+        <To fullname="HappyTrip.Model.Entities.AirTravel.TravelClass" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.Model.Entities.Transaction.Payment" />
+      <From fullname="HappyTrip.Model.Entities.AirTravel.Schedules/&lt;GetEnumerator&gt;d__0">
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Schedules" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Schedule" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.Model.Entities.AirTravel.Schedules">
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Schedule" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.Model.Entities.AirTravel.FlightCost">
+        <To fullname="HappyTrip.Model.Entities.AirTravel.TravelClass" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.Model.Entities.Transaction.Cancelation" />
+      <From fullname="HappyTrip.Model.Entities.Transaction.BookingTravelDirectionException" />
+      <From fullname="HappyTrip.Model.Entities.Common.City">
+        <To fullname="HappyTrip.Model.Entities.Common.State" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.Model.Entities.AirTravel.Schedule">
+        <To fullname="HappyTrip.Model.Entities.AirTravel.FlightCost" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Flight" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Route" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.Model.Entities.AirTravel.SearchLog">
+        <To fullname="HappyTrip.Model.Entities.AirTravel.TravelDirection" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.SearchResult" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.Model.Entities.Transaction.BookingTypes" />
+      <From fullname="HappyTrip.Model.Entities.AirTravel.TravelClass" />
+      <From fullname="HappyTrip.Model.Entities.AirTravel.Airline">
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Flight" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.Model.Entities.UserAccount.ProfileCommon">
+        <To fullname="HappyTrip.Model.Entities.UserAccount.Personal" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.UserAccount.Contact" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.Model.Entities.Transaction.Passenger" />
+      <From fullname="HappyTrip.Model.Entities.AirTravel.Route">
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Schedule" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Common.City" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.Model.Entities.AirTravel.SearchResult">
+        <To fullname="HappyTrip.Model.Entities.AirTravel.TravelSchedule" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.Model.Entities.Transaction.TravelBooking">
+        <To fullname="HappyTrip.Model.Entities.AirTravel.TravelDirection" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Transaction.Booking" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.Model.Entities.Transaction.PaymentStatus" />
+      <From fullname="HappyTrip.Model.Entities.Common.State">
+        <To fullname="HappyTrip.Model.Entities.Common.City" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.Model.Entities.AirTravel.ScheduleType" />
+      <From fullname="HappyTrip.Model.Entities.UserAccount.Personal" />
+      <From fullname="HappyTrip.Model.Entities.AirTravel.TravelSchedule">
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Schedule" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.ScheduleType" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.Model.Entities.AirTravel.TravelDirection" />
+      <From fullname="HappyTrip.Model.Entities.UserAccount.Contact" />
+      <From fullname="HappyTrip.Model.Entities.Transaction.CardTypes" />
+      <From fullname="HappyTrip.Model.Entities.Transaction.BookingContact">
+        <To fullname="HappyTrip.Model.Entities.UserAccount.Contact" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.Model.Entities.AirTravel.Flight">
+        <To fullname="HappyTrip.Model.Entities.AirTravel.FlightClass" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Schedule" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.Airline" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.Model.Entities.AirTravel.SearchInfo">
+        <To fullname="HappyTrip.Model.Entities.Common.City" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.TravelClass" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.TravelDirection" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.Model.Entities.Transaction.FlightBooking">
+        <To fullname="HappyTrip.Model.Entities.Transaction.Booking" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.Transaction.Passenger" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.TravelSchedule" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+        <To fullname="HappyTrip.Model.Entities.AirTravel.FlightClass" assemblyname="HappyTrip.Model.Entities" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="HappyTrip.Model.Entities.Transaction.Card" />
+    </TypeReferences>
+  </Assembly>
+</Dependencies>

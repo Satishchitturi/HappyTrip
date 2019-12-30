@@ -1,0 +1,44 @@
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\XmlLogger\bin\Debug\HappyTripXmlLogger.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\XmlLogger\bin\Debug\HappyTripXmlLogger.pdb
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\XmlLogger\bin\Debug\HappyTrip.Model.BusinessLayer.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\XmlLogger\bin\Debug\HappyTrip.Model.Entities.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\XmlLogger\bin\Debug\HappyTrip.DataAccessLayer.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\XmlLogger\bin\Debug\HappyTrip.Model.PaymentService.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\XmlLogger\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\XmlLogger\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\XmlLogger\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\XmlLogger\bin\Debug\Microsoft.Practices.Unity.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\XmlLogger\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\XmlLogger\bin\Debug\HappyTrip.Model.BusinessLayer.pdb
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\XmlLogger\bin\Debug\HappyTrip.Model.Entities.pdb
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\XmlLogger\bin\Debug\HappyTrip.DataAccessLayer.pdb
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\XmlLogger\bin\Debug\HappyTrip.Model.PaymentService.pdb
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\XmlLogger\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\XmlLogger\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\XmlLogger\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\XmlLogger\bin\Debug\Microsoft.Practices.Unity.xml
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\XmlLogger\bin\Debug\Microsoft.Practices.Unity.Interception.xml
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\XmlLogger\obj\Debug\ResolveAssemblyReference.cache
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\XmlLogger\obj\Debug\HappyTripXmlLogger.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BASE CODE\HappyTrip\XmlLogger\obj\Debug\HappyTripXmlLogger.pdb
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BUG CODE\HappyTrip\XmlLogger\bin\Debug\HappyTripXmlLogger.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BUG CODE\HappyTrip\XmlLogger\bin\Debug\HappyTripXmlLogger.pdb
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BUG CODE\HappyTrip\XmlLogger\bin\Debug\HappyTrip.Model.Entities.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BUG CODE\HappyTrip\XmlLogger\bin\Debug\HappyTrip.Model.Entities.pdb
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BUG CODE\HappyTrip\XmlLogger\obj\Debug\ResolveAssemblyReference.cache
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BUG CODE\HappyTrip\XmlLogger\obj\Debug\HappyTripXmlLogger.dll
+D:\TRAINING\MINDTREE\PROJECT\CODE\ITERATION 2\BUG CODE\HappyTrip\XmlLogger\obj\Debug\HappyTripXmlLogger.pdb
+E:\pratian\Mindtree\Iteration 2\BUG CODE TO PAVAN\BUG CODE TO PAVAN\HappyTrip\XmlLogger\bin\Debug\HappyTripXmlLogger.dll
+E:\pratian\Mindtree\Iteration 2\BUG CODE TO PAVAN\BUG CODE TO PAVAN\HappyTrip\XmlLogger\bin\Debug\HappyTripXmlLogger.pdb
+E:\pratian\Mindtree\Iteration 2\BUG CODE TO PAVAN\BUG CODE TO PAVAN\HappyTrip\XmlLogger\bin\Debug\HappyTrip.Model.Entities.dll
+E:\pratian\Mindtree\Iteration 2\BUG CODE TO PAVAN\BUG CODE TO PAVAN\HappyTrip\XmlLogger\bin\Debug\HappyTrip.Model.Entities.pdb
+E:\pratian\Mindtree\Iteration 2\BUG CODE TO PAVAN\BUG CODE TO PAVAN\HappyTrip\XmlLogger\obj\Debug\ResolveAssemblyReference.cache
+E:\pratian\Mindtree\Iteration 2\BUG CODE TO PAVAN\BUG CODE TO PAVAN\HappyTrip\XmlLogger\obj\Debug\HappyTripXmlLogger.dll
+E:\pratian\Mindtree\Iteration 2\BUG CODE TO PAVAN\BUG CODE TO PAVAN\HappyTrip\XmlLogger\obj\Debug\HappyTripXmlLogger.pdb
+E:\Prabhav-Laptop\E\Mindtree\Mindtree-CodeBase\Other\DOTNET\Iteration-2\buggy\HappyTrip-2\XmlLogger\bin\Debug\HappyTripXmlLogger.dll
+E:\Prabhav-Laptop\E\Mindtree\Mindtree-CodeBase\Other\DOTNET\Iteration-2\buggy\HappyTrip-2\XmlLogger\bin\Debug\HappyTripXmlLogger.pdb
+E:\Prabhav-Laptop\E\Mindtree\Mindtree-CodeBase\Other\DOTNET\Iteration-2\buggy\HappyTrip-2\XmlLogger\bin\Debug\HappyTrip.Model.Entities.dll
+E:\Prabhav-Laptop\E\Mindtree\Mindtree-CodeBase\Other\DOTNET\Iteration-2\buggy\HappyTrip-2\XmlLogger\bin\Debug\HappyTrip.Model.Entities.pdb
+E:\Prabhav-Laptop\E\Mindtree\Mindtree-CodeBase\Other\DOTNET\Iteration-2\buggy\HappyTrip-2\XmlLogger\obj\Debug\HappyTripXmlLogger.csprojResolveAssemblyReference.cache
+E:\Prabhav-Laptop\E\Mindtree\Mindtree-CodeBase\Other\DOTNET\Iteration-2\buggy\HappyTrip-2\XmlLogger\obj\Debug\HappyTripXmlLogger.dll
+E:\Prabhav-Laptop\E\Mindtree\Mindtree-CodeBase\Other\DOTNET\Iteration-2\buggy\HappyTrip-2\XmlLogger\obj\Debug\HappyTripXmlLogger.pdb

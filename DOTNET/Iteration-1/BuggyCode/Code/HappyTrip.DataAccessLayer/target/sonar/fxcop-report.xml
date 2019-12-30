@@ -1,0 +1,623 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 10.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="10.0">
+ <Namespaces>
+  <Namespace Name="HappyTrip.DataAccessLayer.Search">
+   <Messages>
+    <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="Breaking">
+     <Issue Certainty="50" Level="Warning">Consider merging the types defined in 'HappyTrip.DataAccessLayer.Search' with another namespace.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+ </Namespaces>
+ <Targets>
+  <Target Name="$(ProjectDir)/../../bin/Debug/HappyTrip.DataAccessLayer.dll">
+   <Modules>
+    <Module Name="happytrip.dataaccesslayer.dll">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Sign 'HappyTrip.DataAccessLayer.dll' with a strong name key.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="HappyTrip.DataAccessLayer.AirTravel">
+       <Types>
+        <Type Name="AirlineDAO" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#GetAirlines()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="AirlineDAO.cs" Line="51">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'AirlineDAO.GetAirlines()' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="AirTravelDAOFactory" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetInstance()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="AirTravelDAOFactory.cs" Line="32">Change 'AirTravelDAOFactory.GetInstance()' to a property if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FlightDAO" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#GetClassDetails(HappyTrip.Model.Entities.AirTravel.Flight)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="FlightDAO.cs" Line="96">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'FlightDAO.GetClassDetails(Flight)' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="FlightDAO.cs" Line="99">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'FlightDAO.GetClassDetails(Flight)' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetFlight(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="FlightDAO.cs" Line="154">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'FlightDAO.GetFlight(int)' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="FlightDAO.cs" Line="167">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'FlightDAO.GetFlight(int)' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="FlightDAO.cs" Line="170">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'FlightDAO.GetFlight(int)' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int64.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="FlightDAO.cs" Line="151">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'FlightDAO.GetFlight(int)' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetFlights()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="FlightDAO.cs" Line="54">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'FlightDAO.GetFlights()' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int64.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="FlightDAO.cs" Line="51">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'FlightDAO.GetFlights()' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InsertFlight(HappyTrip.Model.Entities.AirTravel.Flight)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Convert.ToInt64(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="FlightDAO.cs" Line="287">Because the behavior of 'Convert.ToInt64(object)' could vary based on the current user's locale settings, replace this call in 'FlightDAO.InsertFlight(Flight)' with a call to 'Convert.ToInt64(object, IFormatProvider)'. If the result of 'Convert.ToInt64(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateFlight(HappyTrip.Model.Entities.AirTravel.Flight)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="FlightDAO.cs" Line="359">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'FlightDAO.UpdateFlight(Flight)' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IScheduleDAO" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetFlightCostsForSchedule(System.Int64)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;FlightCost&gt;' in 'IScheduleDAO.GetFlightCostsForSchedule(long)' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="RouteDAO" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#GetRouteID(HappyTrip.Model.Entities.AirTravel.Route)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="RouteDAO.cs" Line="242">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'RouteDAO.GetRouteID(Route)' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetRoutes()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Double.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="RouteDAO.cs" Line="70">Because the behavior of 'double.Parse(string)' could vary based on the current user's locale settings, replace this call in 'RouteDAO.GetRoutes()' with a call to 'double.Parse(string, IFormatProvider)'. If the result of 'double.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int64.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="RouteDAO.cs" Line="55">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'RouteDAO.GetRoutes()' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="RouteDAO.cs" Line="58">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'RouteDAO.GetRoutes()' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="RouteDAO.cs" Line="64">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'RouteDAO.GetRoutes()' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="RouteDAOException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'RouteDAOException': protected RouteDAOException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+          <Message TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="Breaking">
+           <Issue Name="System.ApplicationException" Certainty="75" Level="Error">Change the base type of 'RouteDAOException' so that it no longer extends 'ApplicationException'. This base exception type does not provide any additional value for framework classes. Extend 'System.Exception' or an existing unsealed exception type instead. Do not create a new exception base type unless there is specific value in enabling the creation of a catch handler for an entire class of exceptions.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="RouteNotAvailableForScheduleDAOException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'RouteNotAvailableForScheduleDAOException': protected RouteNotAvailableForScheduleDAOException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="ScheduleDAO" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#GetFlightCostsForSchedule(System.Int64)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="ScheduleDAO.cs" Line="573">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'ScheduleDAO.GetFlightCostsForSchedule(long)' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="ScheduleDAO.cs" Line="575">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'ScheduleDAO.GetFlightCostsForSchedule(long)' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetRouteID(HappyTrip.Model.Entities.AirTravel.Schedule)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="ScheduleDAO.cs" Line="175">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'ScheduleDAO.GetRouteID(Schedule)' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetSchedule(System.Int64)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Convert.ToDateTime(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="ScheduleDAO.cs" Line="505">Because the behavior of 'Convert.ToDateTime(object)' could vary based on the current user's locale settings, replace this call in 'ScheduleDAO.GetSchedule(long)' with a call to 'Convert.ToDateTime(object, IFormatProvider)'. If the result of 'Convert.ToDateTime(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="ScheduleDAO.cs" Line="508">Because the behavior of 'Convert.ToDateTime(object)' could vary based on the current user's locale settings, replace this call in 'ScheduleDAO.GetSchedule(long)' with a call to 'Convert.ToDateTime(object, IFormatProvider)'. If the result of 'Convert.ToDateTime(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="ScheduleDAO.cs" Line="480">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'ScheduleDAO.GetSchedule(long)' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="ScheduleDAO.cs" Line="514">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'ScheduleDAO.GetSchedule(long)' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int64.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="ScheduleDAO.cs" Line="477">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'ScheduleDAO.GetSchedule(long)' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="ScheduleDAO.cs" Line="484">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'ScheduleDAO.GetSchedule(long)' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="ScheduleDAO.cs" Line="491">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'ScheduleDAO.GetSchedule(long)' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="ScheduleDAO.cs" Line="495">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'ScheduleDAO.GetSchedule(long)' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="ScheduleDAO.cs" Line="499">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'ScheduleDAO.GetSchedule(long)' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="ScheduleDAO.cs" Line="502">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'ScheduleDAO.GetSchedule(long)' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetSchedules()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.DateTime.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="ScheduleDAO.cs" Line="82">Because the behavior of 'DateTime.Parse(string)' could vary based on the current user's locale settings, replace this call in 'ScheduleDAO.GetSchedules()' with a call to 'DateTime.Parse(string, IFormatProvider)'. If the result of 'DateTime.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="ScheduleDAO.cs" Line="86">Because the behavior of 'DateTime.Parse(string)' could vary based on the current user's locale settings, replace this call in 'ScheduleDAO.GetSchedules()' with a call to 'DateTime.Parse(string, IFormatProvider)'. If the result of 'DateTime.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="ScheduleDAO.cs" Line="57">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'ScheduleDAO.GetSchedules()' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="ScheduleDAO.cs" Line="90">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'ScheduleDAO.GetSchedules()' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="ScheduleDAO.cs" Line="109">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'ScheduleDAO.GetSchedules()' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="ScheduleDAO.cs" Line="111">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'ScheduleDAO.GetSchedules()' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int64.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="ScheduleDAO.cs" Line="54">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'ScheduleDAO.GetSchedules()' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="ScheduleDAO.cs" Line="61">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'ScheduleDAO.GetSchedules()' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="ScheduleDAO.cs" Line="68">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'ScheduleDAO.GetSchedules()' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="ScheduleDAO.cs" Line="72">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'ScheduleDAO.GetSchedules()' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="ScheduleDAO.cs" Line="76">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'ScheduleDAO.GetSchedules()' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="ScheduleDAO.cs" Line="79">Because the behavior of 'long.Parse(string)' could vary based on the current user's locale settings, replace this call in 'ScheduleDAO.GetSchedules()' with a call to 'long.Parse(string, IFormatProvider)'. If the result of 'long.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InsertSchedule(HappyTrip.Model.Entities.AirTravel.Schedule,System.Data.IDbConnection&amp;,System.Int32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Convert.ToInt64(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\AirTravel" File="ScheduleDAO.cs" Line="315">Because the behavior of 'Convert.ToInt64(object)' could vary based on the current user's locale settings, replace this call in 'ScheduleDAO.InsertSchedule(Schedule, ref IDbConnection, int)' with a call to 'Convert.ToInt64(object, IFormatProvider)'. If the result of 'Convert.ToInt64(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ScheduleDAOException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'ScheduleDAOException': protected ScheduleDAOException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+          <Message TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="Breaking">
+           <Issue Name="System.ApplicationException" Certainty="75" Level="Error">Change the base type of 'ScheduleDAOException' so that it no longer extends 'ApplicationException'. This base exception type does not provide any additional value for framework classes. Extend 'System.Exception' or an existing unsealed exception type instead. Do not create a new exception base type unless there is specific value in enabling the creation of a catch handler for an entire class of exceptions.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="HappyTrip.DataAccessLayer.Common">
+       <Types>
+        <Type Name="AirlineDAOException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'AirlineDAOException': protected AirlineDAOException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+          <Message TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="Breaking">
+           <Issue Name="System.ApplicationException" Certainty="75" Level="Error">Change the base type of 'AirlineDAOException' so that it no longer extends 'ApplicationException'. This base exception type does not provide any additional value for framework classes. Extend 'System.Exception' or an existing unsealed exception type instead. Do not create a new exception base type unless there is specific value in enabling the creation of a catch handler for an entire class of exceptions.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="CityDAO" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#AddCity(HappyTrip.Model.Entities.Common.City)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Convert.ToInt32(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Common" File="CityDAO.cs" Line="159">Because the behavior of 'Convert.ToInt32(object)' could vary based on the current user's locale settings, replace this call in 'CityDAO.AddCity(City)' with a call to 'Convert.ToInt32(object, IFormatProvider)'. If the result of 'Convert.ToInt32(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetCities()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Convert.ToInt64(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Common" File="CityDAO.cs" Line="107">Because the behavior of 'Convert.ToInt64(object)' could vary based on the current user's locale settings, replace this call in 'CityDAO.GetCities()' with a call to 'Convert.ToInt64(object, IFormatProvider)'. If the result of 'Convert.ToInt64(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Common" File="CityDAO.cs" Line="111">Because the behavior of 'Convert.ToInt64(object)' could vary based on the current user's locale settings, replace this call in 'CityDAO.GetCities()' with a call to 'Convert.ToInt64(object, IFormatProvider)'. If the result of 'Convert.ToInt64(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetStates()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Convert.ToInt64(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Common" File="CityDAO.cs" Line="56">Because the behavior of 'Convert.ToInt64(object)' could vary based on the current user's locale settings, replace this call in 'CityDAO.GetStates()' with a call to 'Convert.ToInt64(object, IFormatProvider)'. If the result of 'Convert.ToInt64(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CityDAOException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'CityDAOException': protected CityDAOException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+          <Message TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="Breaking">
+           <Issue Name="System.ApplicationException" Certainty="75" Level="Error">Change the base type of 'CityDAOException' so that it no longer extends 'ApplicationException'. This base exception type does not provide any additional value for framework classes. Extend 'System.Exception' or an existing unsealed exception type instead. Do not create a new exception base type unless there is specific value in enabling the creation of a catch handler for an entire class of exceptions.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="CityDAOFactory" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetInstance()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Common" File="CityDAOFactory.cs" Line="31">Change 'CityDAOFactory.GetInstance()' to a property if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ConnectToDatabaseException" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="ExceptionsShouldBePublic" Category="Microsoft.Design" CheckId="CA1064" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+           <Issue Certainty="95" Level="Warning">Make exception class 'ConnectToDatabaseException' public.</Issue>
+          </Message>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'ConnectToDatabaseException': protected ConnectToDatabaseException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="FlightDAOException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'FlightDAOException': protected FlightDAOException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+          <Message TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="Breaking">
+           <Issue Name="System.ApplicationException" Certainty="75" Level="Error">Change the base type of 'FlightDAOException' so that it no longer extends 'ApplicationException'. This base exception type does not provide any additional value for framework classes. Extend 'System.Exception' or an existing unsealed exception type instead. Do not create a new exception base type unless there is specific value in enabling the creation of a catch handler for an entire class of exceptions.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="ICityDAO" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetStates()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;State&gt;' in 'ICityDAO.GetStates()' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning">Change 'ICityDAO.GetStates()' to a property if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="StateDAOException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'StateDAOException': protected StateDAOException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+          <Message TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="Breaking">
+           <Issue Name="System.ApplicationException" Certainty="75" Level="Error">Change the base type of 'StateDAOException' so that it no longer extends 'ApplicationException'. This base exception type does not provide any additional value for framework classes. Extend 'System.Exception' or an existing unsealed exception type instead. Do not create a new exception base type unless there is specific value in enabling the creation of a catch handler for an entire class of exceptions.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="HappyTrip.DataAccessLayer.Search">
+       <Types>
+        <Type Name="FlightAvailabilityDAOException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'FlightAvailabilityDAOException': protected FlightAvailabilityDAOException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+          <Message TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="Breaking">
+           <Issue Name="System.ApplicationException" Certainty="75" Level="Error">Change the base type of 'FlightAvailabilityDAOException' so that it no longer extends 'ApplicationException'. This base exception type does not provide any additional value for framework classes. Extend 'System.Exception' or an existing unsealed exception type instead. Do not create a new exception base type unless there is specific value in enabling the creation of a catch handler for an entire class of exceptions.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="ISearchDAO" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetCities()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;City&gt;' in 'ISearchDAO.GetCities()' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning">Change 'ISearchDAO.GetCities()' to a property if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SearchDAO" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#GetAvailabilityForSchedule(HappyTrip.Model.Entities.AirTravel.Schedule,System.Int32,System.DateTime,HappyTrip.Model.Entities.AirTravel.TravelClass)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Convert.ToBoolean(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Search" File="SearchDAO.cs" Line="414">Because the behavior of 'Convert.ToBoolean(object)' could vary based on the current user's locale settings, replace this call in 'SearchDAO.GetAvailabilityForSchedule(Schedule, int, DateTime, TravelClass)' with a call to 'Convert.ToBoolean(object, IFormatProvider)'. If the result of 'Convert.ToBoolean(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetCities()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Convert.ToInt64(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Search" File="SearchDAO.cs" Line="283">Because the behavior of 'Convert.ToInt64(object)' could vary based on the current user's locale settings, replace this call in 'SearchDAO.GetCities()' with a call to 'Convert.ToInt64(object, IFormatProvider)'. If the result of 'Convert.ToInt64(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Search" File="SearchDAO.cs" Line="287">Because the behavior of 'Convert.ToInt64(object)' could vary based on the current user's locale settings, replace this call in 'SearchDAO.GetCities()' with a call to 'Convert.ToInt64(object, IFormatProvider)'. If the result of 'Convert.ToInt64(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SearchForFlight(HappyTrip.Model.Entities.AirTravel.SearchInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Convert.ToBoolean(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Search" File="SearchDAO.cs" Line="202">Because the behavior of 'Convert.ToBoolean(object)' could vary based on the current user's locale settings, replace this call in 'SearchDAO.SearchForFlight(SearchInfo)' with a call to 'Convert.ToBoolean(object, IFormatProvider)'. If the result of 'Convert.ToBoolean(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToDateTime(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Search" File="SearchDAO.cs" Line="189">Because the behavior of 'Convert.ToDateTime(object)' could vary based on the current user's locale settings, replace this call in 'SearchDAO.SearchForFlight(SearchInfo)' with a call to 'Convert.ToDateTime(object, IFormatProvider)'. If the result of 'Convert.ToDateTime(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Search" File="SearchDAO.cs" Line="190">Because the behavior of 'Convert.ToDateTime(object)' could vary based on the current user's locale settings, replace this call in 'SearchDAO.SearchForFlight(SearchInfo)' with a call to 'Convert.ToDateTime(object, IFormatProvider)'. If the result of 'Convert.ToDateTime(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Search" File="SearchDAO.cs" Line="191">Because the behavior of 'Convert.ToDateTime(object)' could vary based on the current user's locale settings, replace this call in 'SearchDAO.SearchForFlight(SearchInfo)' with a call to 'Convert.ToDateTime(object, IFormatProvider)'. If the result of 'Convert.ToDateTime(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Search" File="SearchDAO.cs" Line="195">Because the behavior of 'Convert.ToDateTime(object)' could vary based on the current user's locale settings, replace this call in 'SearchDAO.SearchForFlight(SearchInfo)' with a call to 'Convert.ToDateTime(object, IFormatProvider)'. If the result of 'Convert.ToDateTime(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Search" File="SearchDAO.cs" Line="196">Because the behavior of 'Convert.ToDateTime(object)' could vary based on the current user's locale settings, replace this call in 'SearchDAO.SearchForFlight(SearchInfo)' with a call to 'Convert.ToDateTime(object, IFormatProvider)'. If the result of 'Convert.ToDateTime(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Search" File="SearchDAO.cs" Line="197">Because the behavior of 'Convert.ToDateTime(object)' could vary based on the current user's locale settings, replace this call in 'SearchDAO.SearchForFlight(SearchInfo)' with a call to 'Convert.ToDateTime(object, IFormatProvider)'. If the result of 'Convert.ToDateTime(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToDecimal(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Search" File="SearchDAO.cs" Line="220">Because the behavior of 'Convert.ToDecimal(object)' could vary based on the current user's locale settings, replace this call in 'SearchDAO.SearchForFlight(SearchInfo)' with a call to 'Convert.ToDecimal(object, IFormatProvider)'. If the result of 'Convert.ToDecimal(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToDouble(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Search" File="SearchDAO.cs" Line="232">Because the behavior of 'Convert.ToDouble(object)' could vary based on the current user's locale settings, replace this call in 'SearchDAO.SearchForFlight(SearchInfo)' with a call to 'Convert.ToDouble(object, IFormatProvider)'. If the result of 'Convert.ToDouble(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt16(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Search" File="SearchDAO.cs" Line="201">Because the behavior of 'Convert.ToInt16(object)' could vary based on the current user's locale settings, replace this call in 'SearchDAO.SearchForFlight(SearchInfo)' with a call to 'Convert.ToInt16(object, IFormatProvider)'. If the result of 'Convert.ToInt16(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Search" File="SearchDAO.cs" Line="206">Because the behavior of 'Convert.ToInt16(object)' could vary based on the current user's locale settings, replace this call in 'SearchDAO.SearchForFlight(SearchInfo)' with a call to 'Convert.ToInt16(object, IFormatProvider)'. If the result of 'Convert.ToInt16(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Search" File="SearchDAO.cs" Line="211">Because the behavior of 'Convert.ToInt16(object)' could vary based on the current user's locale settings, replace this call in 'SearchDAO.SearchForFlight(SearchInfo)' with a call to 'Convert.ToInt16(object, IFormatProvider)'. If the result of 'Convert.ToInt16(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Search" File="SearchDAO.cs" Line="215">Because the behavior of 'Convert.ToInt16(object)' could vary based on the current user's locale settings, replace this call in 'SearchDAO.SearchForFlight(SearchInfo)' with a call to 'Convert.ToInt16(object, IFormatProvider)'. If the result of 'Convert.ToInt16(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Search" File="SearchDAO.cs" Line="221">Because the behavior of 'Convert.ToInt16(object)' could vary based on the current user's locale settings, replace this call in 'SearchDAO.SearchForFlight(SearchInfo)' with a call to 'Convert.ToInt16(object, IFormatProvider)'. If the result of 'Convert.ToInt16(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt32(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Search" File="SearchDAO.cs" Line="216">Because the behavior of 'Convert.ToInt32(object)' could vary based on the current user's locale settings, replace this call in 'SearchDAO.SearchForFlight(SearchInfo)' with a call to 'Convert.ToInt32(object, IFormatProvider)'. If the result of 'Convert.ToInt32(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt64(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Search" File="SearchDAO.cs" Line="187">Because the behavior of 'Convert.ToInt64(object)' could vary based on the current user's locale settings, replace this call in 'SearchDAO.SearchForFlight(SearchInfo)' with a call to 'Convert.ToInt64(object, IFormatProvider)'. If the result of 'Convert.ToInt64(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Search" File="SearchDAO.cs" Line="224">Because the behavior of 'Convert.ToInt64(object)' could vary based on the current user's locale settings, replace this call in 'SearchDAO.SearchForFlight(SearchInfo)' with a call to 'Convert.ToInt64(object, IFormatProvider)'. If the result of 'Convert.ToInt64(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Search" File="SearchDAO.cs" Line="228">Because the behavior of 'Convert.ToInt64(object)' could vary based on the current user's locale settings, replace this call in 'SearchDAO.SearchForFlight(SearchInfo)' with a call to 'Convert.ToInt64(object, IFormatProvider)'. If the result of 'Convert.ToInt64(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SearchDAOFactory" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetInstance()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Search" File="SearchDAOFactory.cs" Line="31">Change 'SearchDAOFactory.GetInstance()' to a property if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SearchFlightDAOException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'SearchFlightDAOException': protected SearchFlightDAOException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+          <Message TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="Breaking">
+           <Issue Name="System.ApplicationException" Certainty="75" Level="Error">Change the base type of 'SearchFlightDAOException' so that it no longer extends 'ApplicationException'. This base exception type does not provide any additional value for framework classes. Extend 'System.Exception' or an existing unsealed exception type instead. Do not create a new exception base type unless there is specific value in enabling the creation of a catch handler for an entire class of exceptions.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="HappyTrip.DataAccessLayer.Transaction">
+       <Types>
+        <Type Name="AirTravelBookingDAOImpl" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#MakeBooking(HappyTrip.Model.Entities.Transaction.Booking,System.Data.IDbConnection)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Convert.ToInt64(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Transaction" File="AirTravelBookingDAOImpl.cs" Line="282">Because the behavior of 'Convert.ToInt64(object)' could vary based on the current user's locale settings, replace this call in 'AirTravelBookingDAOImpl.MakeBooking(Booking, IDbConnection)' with a call to 'Convert.ToInt64(object, IFormatProvider)'. If the result of 'Convert.ToInt64(object, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="AirTravelBookingException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'AirTravelBookingException': protected AirTravelBookingException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+          <Message TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="Breaking">
+           <Issue Name="System.ApplicationException" Certainty="75" Level="Error">Change the base type of 'AirTravelBookingException' so that it no longer extends 'ApplicationException'. This base exception type does not provide any additional value for framework classes. Extend 'System.Exception' or an existing unsealed exception type instead. Do not create a new exception base type unless there is specific value in enabling the creation of a catch handler for an entire class of exceptions.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="BookingDAOException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'BookingDAOException': protected BookingDAOException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+          <Message TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="Breaking">
+           <Issue Name="System.ApplicationException" Certainty="75" Level="Error">Change the base type of 'BookingDAOException' so that it no longer extends 'ApplicationException'. This base exception type does not provide any additional value for framework classes. Extend 'System.Exception' or an existing unsealed exception type instead. Do not create a new exception base type unless there is specific value in enabling the creation of a catch handler for an entire class of exceptions.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="BookingDAOFactory" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetInstance()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Transaction" File="BookingDAOFactory.cs" Line="32">Change 'BookingDAOFactory.GetInstance()' to a property if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="BookingDAOImplFactory" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#.cctor()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="InitializeReferenceTypeStaticFieldsInline" Category="Microsoft.Performance" CheckId="CA1810" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="CriticalWarning" Path="E:\pratian\Mindtree\Bangalore_Iteration\Bug Code\HappyTrip\HappyTrip.DataAccessLayer\Transaction" File="BookingDAOImplFactory.cs" Line="17">Initialize all static fields in 'BookingDAOImplFactory' when those fields are declared and remove the explicit static constructor.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="InvalidBookingTypeDAOException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Add the following constructor to 'InvalidBookingTypeDAOException': protected InvalidBookingTypeDAOException(SerializationInfo, StreamingContext).</Issue>
+          </Message>
+          <Message TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058" Status="Active" Created="2015-06-15 15:29:00Z" FixCategory="Breaking">
+           <Issue Name="System.ApplicationException" Certainty="75" Level="Error">Change the base type of 'InvalidBookingTypeDAOException' so that it no longer extends 'ApplicationException'. This base exception type does not provide any additional value for framework classes. Extend 'System.Exception' or an existing unsealed exception type instead. Do not create a new exception base type unless there is specific value in enabling the creation of a catch handler for an entire class of exceptions.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>Assemblies should have valid strong names</Name>
+   <Description>Either the assembly has no strong name, an invalid one, or the strong name is valid only because of the computer configuration. The assembly should not be deployed in this state. The most common causes of this are: 1) The assembly's contents were modified after it was signed. 2) The signing process failed. 3) The assembly was delay-signed. 4) A registry key existed that allowed the check to pass (where it would not have otherwise).</Description>
+   <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182127(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="DesignRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020">
+   <Name>Avoid namespaces with few types</Name>
+   <Description>A namespace should generally have more than five types.</Description>
+   <Resolution Name="Default">Consider merging the types defined in '{0}' with another namespace.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182130(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">Warning</MessageLevel>
+   <File Name="DesignRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002">
+   <Name>Do not expose generic lists</Name>
+   <Description>Do not expose List&lt;T&gt; in object models. Use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt; instead. List&lt;T&gt; is meant to be used from implementation, not in object model API. List&lt;T&gt; is optimized for performance at the cost of long term versioning. For example, if you return List&lt;T&gt; to the client code, you will not ever be able to receive notifications when client code modifies the collection.</Description>
+   <Resolution Name="Default">Change {0} in {1} to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182142(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="DesignRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="ExceptionsShouldBePublic" Category="Microsoft.Design" CheckId="CA1064">
+   <Name>Exceptions should be public</Name>
+   <Description>Exception classes should either be public, or have a non-generic public ancestor.</Description>
+   <Resolution Name="Default">Make exception class {0} public.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264484(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="DesignRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032">
+   <Name>Implement standard exception constructors</Name>
+   <Description>Multiple constructors are required to correctly implement a custom exception. Missing constructors can make your exception unusable in certain scenarios. For example, the serialization constructor is required for handling exceptions in XML Web services.</Description>
+   <Resolution Name="MissingConstructor">Add the following constructor to {0}: {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182151(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="DesignRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="InitializeReferenceTypeStaticFieldsInline" Category="Microsoft.Performance" CheckId="CA1810">
+   <Name>Initialize reference type static fields inline</Name>
+   <Description>Static fields should be initialized when declared. Initializing static data in explicit static constructors results in less performant code.</Description>
+   <Resolution Name="Default">Initialize all static fields in {0} when those fields are declared and remove the explicit static constructor.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182275(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">CriticalWarning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+   <Name>Specify IFormatProvider</Name>
+   <Description>If an overload exists that takes an IFormatProvider argument, it should always be called in favor of an overload that does not. Some methods in the runtime convert a value to or from a string representation and take a string parameter that contains one or more characters, called format specifiers, which indicate how the value is to be converted. If the meaning of the format specifier varies by culture, a formatting object supplies the actual characters used in the string representation. In scenarios where sorting and comparison behavior should never change between cultures, specify CultureInfo.InvariantCulture, otherwise, specify CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="IFormatProviderAlternate">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be based on input from the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify {4}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182190(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="GlobalizationRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058">
+   <Name>Types should not extend certain base types</Name>
+   <Description>It is best not to extend some base types or to prefer extending better alternatives to those base types.</Description>
+   <Resolution Name="System.ApplicationException">Change the base type of {0} so that it no longer extends {1}. This base exception type does not provide any additional value for framework classes. Extend 'System.Exception' or an existing unsealed exception type instead. Do not create a new exception base type unless there is specific value in enabling the creation of a catch handler for an entire class of exceptions.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182171(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="DesignRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024">
+   <Name>Use properties where appropriate</Name>
+   <Description>Properties should be used instead of Get/Set methods in most situations. Methods are preferable to properties in the following situations: the operation is a conversion, is expensive or has an observable side-effect; the order of execution is important; calling the member twice in succession creates different results; a member is static but returns a mutable value; or the member returns an array.</Description>
+   <Resolution Name="Default">Change {0} to a property if appropriate.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182181(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="DesignRules.dll" Version="10.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>
